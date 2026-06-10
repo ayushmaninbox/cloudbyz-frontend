@@ -223,9 +223,10 @@ body {
   right: 0;
   margin: 0 auto;
   width: 144px;
-  height: 74px;
+  height: 72px;
   background: #fff;
   border-radius: 72px 72px 0 0;
+  box-shadow: 0 2px 0 #fff;
   z-index: 2;
   box-sizing: border-box;
 }
@@ -1177,16 +1178,16 @@ body {
   height: 100%;
 }
 .how-works-laptop-container {
-  width: 180px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .how-works-laptop {
-  width: 160px;
-  height: 160px;
+  width: 230px;
+  height: 230px;
   object-fit: contain;
 }
 .step-card-wrapper {
@@ -1194,6 +1195,9 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+.how-step-col {
+  gap: 70px !important;
 }
 .step-card {
   background: #fff;
@@ -1318,8 +1322,8 @@ body {
 /* Shared dot (circle at card end) */
 .connector-dot {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #3871e0;
 }
@@ -1331,133 +1335,126 @@ body {
   height: 0;
 }
 
-/* Stepped "Z" connectors: dot → short horizontal → vertical (mid) → horizontal → arrow.
+/* Stepped "Z" connectors: dot → horizontal → vertical (mid) → horizontal.
    The .connector box draws the first horizontal + the vertical (an L with a rounded
    corner); the ::before draws the second horizontal + its rounded corner. */
-.connector-left,
-.connector-right {
-  --span: calc(50% - 60px);   /* total horizontal run from dot to arrow */
-  --seg1: calc(var(--span) * 0.45);  /* dot → vertical */
-  --seg2: calc(var(--span) * 0.55);  /* vertical → arrow */
-  --corner: 2px;
-}
-.connector-left { left: -15px; }
-.connector-right { right: -15px; }
+.connector-left { left: -24px; }
+.connector-right { right: -24px; }
 
 /* ---- Top-left ---- */
 .connector-top-left {
-  top: 22%;
-  width: var(--seg1);
-  height: 14%;
+  top: 100px;
+  width: calc(25% - 50px);
+  height: calc(50% - 138px);
   border-top: 1.5px solid #3871e0;
   border-right: 1.5px solid #3871e0;
-  border-radius: 0 var(--corner) 0 0;
+  border-radius: 0 8px 0 0;
 }
 .connector-top-left::before {
   content: "";
   position: absolute;
   left: 100%;
-  bottom: 0;
-  width: var(--seg2);
-  height: var(--corner);
+  bottom: -8px;
+  width: 100%;
+  height: 8px;
   border-bottom: 1.5px solid #3871e0;
   border-left: 1.5px solid #3871e0;
-  border-radius: 0 0 0 var(--corner);
+  border-radius: 0 0 0 8px;
 }
-.connector-top-left .connector-dot { top: -4px; left: -4px; }
+.connector-top-left .connector-dot { top: -3px; left: -3px; }
 .connector-top-left .connector-arrow {
-  bottom: -6px;
-  left: calc(100% + var(--seg2));
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-left: 8px solid #3871e0;
+  bottom: -12px;
+  left: calc(200% - 6px);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 6px solid #3871e0;
 }
 
 /* ---- Bottom-left ---- */
 .connector-bottom-left {
-  bottom: 22%;
-  width: var(--seg1);
-  height: 14%;
+  bottom: 100px;
+  width: calc(25% - 50px);
+  height: calc(50% - 138px);
   border-bottom: 1.5px solid #3871e0;
   border-right: 1.5px solid #3871e0;
-  border-radius: 0 0 var(--corner) 0;
+  border-radius: 0 0 8px 0;
 }
 .connector-bottom-left::before {
   content: "";
   position: absolute;
   left: 100%;
-  top: 0;
-  width: var(--seg2);
-  height: var(--corner);
+  top: -8px;
+  width: 100%;
+  height: 8px;
   border-top: 1.5px solid #3871e0;
   border-left: 1.5px solid #3871e0;
-  border-radius: var(--corner) 0 0 0;
+  border-radius: 8px 0 0 0;
 }
-.connector-bottom-left .connector-dot { bottom: -4px; left: -4px; }
+.connector-bottom-left .connector-dot { bottom: -3px; left: -3px; }
 .connector-bottom-left .connector-arrow {
-  top: -6px;
-  left: calc(100% + var(--seg2));
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-left: 8px solid #3871e0;
+  top: -12px;
+  left: calc(200% - 6px);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 6px solid #3871e0;
 }
 
 /* ---- Top-right ---- */
 .connector-top-right {
-  top: 22%;
-  width: var(--seg1);
-  height: 14%;
+  top: 100px;
+  width: calc(25% - 50px);
+  height: calc(50% - 138px);
   border-top: 1.5px solid #3871e0;
   border-left: 1.5px solid #3871e0;
-  border-radius: var(--corner) 0 0 0;
+  border-radius: 8px 0 0 0;
 }
 .connector-top-right::before {
   content: "";
   position: absolute;
   right: 100%;
-  bottom: 0;
-  width: var(--seg2);
-  height: var(--corner);
+  bottom: -8px;
+  width: 100%;
+  height: 8px;
   border-bottom: 1.5px solid #3871e0;
   border-right: 1.5px solid #3871e0;
-  border-radius: 0 0 var(--corner) 0;
+  border-radius: 0 0 8px 0;
 }
-.connector-top-right .connector-dot { top: -4px; right: -4px; }
+.connector-top-right .connector-dot { top: -3px; right: -3px; }
 .connector-top-right .connector-arrow {
-  bottom: -6px;
-  right: calc(100% + var(--seg2));
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-right: 8px solid #3871e0;
+  bottom: -12px;
+  right: calc(200% - 6px);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #3871e0;
 }
 
 /* ---- Bottom-right ---- */
 .connector-bottom-right {
-  bottom: 22%;
-  width: var(--seg1);
-  height: 14%;
+  bottom: 100px;
+  width: calc(25% - 50px);
+  height: calc(50% - 138px);
   border-bottom: 1.5px solid #3871e0;
   border-left: 1.5px solid #3871e0;
-  border-radius: 0 0 0 var(--corner);
+  border-radius: 0 0 0 8px;
 }
 .connector-bottom-right::before {
   content: "";
   position: absolute;
   right: 100%;
-  top: 0;
-  width: var(--seg2);
-  height: var(--corner);
+  top: -8px;
+  width: 100%;
+  height: 8px;
   border-top: 1.5px solid #3871e0;
   border-right: 1.5px solid #3871e0;
-  border-radius: 0 var(--corner) 0 0;
+  border-radius: 0 8px 0 0;
 }
-.connector-bottom-right .connector-dot { bottom: -4px; right: -4px; }
+.connector-bottom-right .connector-dot { bottom: -3px; right: -3px; }
 .connector-bottom-right .connector-arrow {
-  top: -6px;
-  right: calc(100% + var(--seg2));
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-right: 8px solid #3871e0;
+  top: -12px;
+  right: calc(200% - 6px);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #3871e0;
 }
 
 .step-arrow { color: #ccc; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; padding: 20px 0; }
@@ -1717,13 +1714,12 @@ body {
 .org-flow-right-line::after {
   content: '';
   position: absolute;
-  right: 0;
+  right: -3px;
   top: 50%;
-  transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
   background: var(--oc);
-  border-radius: 50%;
 }
 .org-flow-card {
   position: relative;

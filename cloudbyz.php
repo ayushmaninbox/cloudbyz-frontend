@@ -12,7 +12,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./cloudbyz.css?v=25" />
+  <link rel="stylesheet" href="./cloudbyz.css?v=38" />
 </head>
 <body>
 
@@ -576,14 +576,14 @@
 
 <!-- ==================== HOW IT WORKS ==================== -->
 <section class="how-section">
-  <div class="container">
+  <div class="cb-container">
     <div class="text-center mb-5">
       <h2 class="section-title">How It Works</h2>
       <p class="section-subtitle">From upload to signed — four clear steps.</p>
     </div>
-    <div class="row align-items-center position-relative">
+    <div class="row position-relative">
       <!-- Left Column: Step 1 & 2 -->
-      <div class="col-lg-5 col-md-6 d-flex flex-column gap-4 mb-4">
+      <div class="col-lg-4 col-md-6 d-flex flex-column gap-4 mb-4 how-step-col">
         <div class="step-card-wrapper blue step-card--left">
           <div class="step-card-offset"></div>
           <div class="step-icon blue-bg">
@@ -622,7 +622,7 @@
       </div>
       
       <!-- Center Column: Laptop Graphic & CSS Connector Lines -->
-      <div class="col-lg-2 d-none d-lg-block text-center mb-4">
+      <div class="col-lg-4 d-none d-lg-block text-center mb-4">
         <div class="how-works-center">
           <!-- Left Connectors -->
           <div class="connector connector-left connector-top-left">
@@ -652,7 +652,7 @@
       </div>
       
       <!-- Right Column: Step 3 & 4 -->
-      <div class="col-lg-5 col-md-6 d-flex flex-column gap-4 mb-4">
+      <div class="col-lg-4 col-md-6 d-flex flex-column gap-4 mb-4 how-step-col">
         <div class="step-card-wrapper orange step-card--right">
           <div class="step-card-offset"></div>
           <div class="step-icon orange-bg">
