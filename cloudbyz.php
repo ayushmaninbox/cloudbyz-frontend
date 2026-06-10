@@ -12,13 +12,13 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./cloudbyz.css?v=15" />
+  <link rel="stylesheet" href="./cloudbyz.css?v=19" />
 </head>
 <body>
 
 <!-- ==================== NAVBAR ==================== -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-  <div class="container-fluid px-4 px-lg-5">
+  <div class="cb-container">
     <a class="navbar-brand" href="#">
       <img src="./public/CloudbyzLogo-September2020-01-01.svg" alt="Cloudbyz" />
     </a>
@@ -27,19 +27,21 @@
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
       <div class="d-flex align-items-lg-center flex-column flex-lg-row ml-auto navbar-right-group">
-        <a class="nav-item-custom active" href="#">Products</a>
-        <a class="nav-item-custom" href="#">Platform</a>
-        <a class="nav-item-custom" href="#">Services</a>
-        <a class="nav-item-custom" href="#">Resources</a>
-        <a class="nav-item-custom mr-lg-4" href="#">Company</a>
+        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+          <a class="nav-item-custom active" href="#">Products</a>
+          <a class="nav-item-custom" href="#">Platform</a>
+          <a class="nav-item-custom" href="#">Services</a>
+          <a class="nav-item-custom" href="#">Resources</a>
+          <a class="nav-item-custom" href="#">Company</a>
+        </div>
         
-        <div class="d-flex align-items-center flex-nowrap nav-contact-group my-2 my-lg-0 mr-lg-4">
+        <div class="d-flex align-items-center flex-nowrap nav-contact-group">
           <a href="#" class="nav-contact">Contact Us</a>
           <span class="nav-divider"></span>
           <a href="#" class="nav-contact">Support</a>
         </div>
         
-        <a href="#" class="btn btn-signin mt-2 mt-lg-0">Sign in</a>
+        <a href="#" class="btn btn-signin">Sign in</a>
       </div>
     </div>
   </div>
@@ -47,7 +49,7 @@
 
 <!-- ==================== HERO ==================== -->
 <section class="hero-section">
-  <div class="container-fluid pl-lg-5 pr-lg-0">
+  <div class="cb-container">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-4 py-lg-5">
         <h1 class="hero-title mb-4">Every Signature Accounted For.<br />Every Workflow Under Control.</h1>
@@ -56,7 +58,7 @@
           <a href="#" class="btn-demo">Request a Demo <i class="fas fa-chevron-right"></i></a>
           <a href="#" class="btn-brief">Download Product Brief <i class="fas fa-download"></i></a>
         </div>
-        <div class="d-flex flex-wrap mt-3 align-items-center">
+        <div class="compliance-badges-row mt-3">
           <div class="compliance-badge">
             <div class="compliance-icon" style="background:#023778;">
               <img src="./public/Group-84106.svg" alt="ESIGN" />
@@ -83,7 +85,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 pr-lg-0">
         <div class="hero-mockup">
           <img src="./public/Group 83967 (1).png" alt="Cloudbyz eSign Platform" />
         </div>
@@ -158,7 +160,7 @@
 
 <!-- ==================== WHY SWITCH ==================== -->
 <section class="why-section">
-  <div class="container-fluid px-4 px-lg-5">
+  <div class="cb-container">
     <div class="text-center mb-5">
       <h2 class="section-title">Why Teams Switch to Cloudbyz eSign</h2>
       <p class="section-subtitle">Your current tool collects signatures. It doesn't run the workflow around them.</p>
@@ -214,7 +216,7 @@
 
 <!-- ==================== PLATFORM CAPABILITIES ==================== -->
 <section class="platform-section">
-  <div class="container-fluid px-4 px-lg-5">
+  <div class="cb-container">
     <div class="text-center mb-5">
       <h2 class="section-title">Platform Capabilities</h2>
       <p class="section-subtitle">Built for the whole agreement — not just the signature.</p>
@@ -222,7 +224,7 @@
 
     <div class="capabilities-wrapper">
       <!-- Signing Workflows -->
-      <div class="mb-5">
+      <div class="d-flex flex-column" style="gap: 12px;">
         <div class="capability-label">
           <img src="./public/Group-84114.svg" alt="Signing" />
           Signing Workflows
@@ -232,7 +234,7 @@
       </div>
 
       <!-- Signing Configuration -->
-      <div class="config-box mb-5">
+      <div class="config-box">
         <div class="config-label">Signing Configuration:</div>
         <div class="flow-diagram-container">
           <div class="flow-connector-line line-1">
@@ -268,7 +270,7 @@
       </div>
 
       <!-- Signee Authentication -->
-      <div class="config-box mb-5">
+      <div class="config-box">
         <div class="config-label">Signee Authentication Options:</div>
         <div class="row auth-options-wrapper py-4">
           <div class="col-lg-4 mb-4">
@@ -308,7 +310,7 @@
       </div>
 
       <!-- Field Types -->
-      <div class="config-box mb-5">
+      <div class="config-box">
         <div class="config-label">Field Types Available:</div>
         <div class="row field-types-wrapper">
           <div class="col-6 col-md-3 mb-4">
@@ -363,18 +365,18 @@
 
 <!-- ==================== AUDIT TRAIL ==================== -->
 <section class="audit-section">
-  <div class="container-fluid px-4 px-lg-5">
+  <div class="cb-container">
     <div class="audit-wrapper">
-      <div class="mb-4">
+      <div class="d-flex flex-column" style="gap: 12px;">
         <div class="capability-label" style="background:#27bbad;">
           <img src="./public/Vector14.svg" alt="Audit" style="height:48px;" />
           Audit Trail
         </div>
         <p class="capability-desc">A complete record of what happened — not just that it happened.</p>
       </div>
-      <p class="capability-text mb-5">Cloudbyz eSign captures the full lifecycle of every document, from the moment it's created to the moment it's completed. Every event is written once, stored permanently, and never modified.</p>
+      <p class="capability-text">Cloudbyz eSign captures the full lifecycle of every document, from the moment it's created to the moment it's completed. Every event is written once, stored permanently, and never modified.</p>
 
-      <div class="config-box mint-box mb-4">
+      <div class="config-box mint-box">
         <div class="config-label mint-label">Events Captured:</div>
         <div class="py-3">
           <div class="audit-timeline-grid">
@@ -470,16 +472,14 @@
 
 <!-- ==================== DOCUMENT & TEMPLATE MANAGEMENT ==================== -->
 <section class="template-section">
-  <div class="container-fluid px-4 px-lg-5">
+  <div class="cb-container">
     <div class="template-wrapper">
-      <div class="mb-4">
-        <div class="capability-label" style="background:#da6261; margin-left: -48px;">
-          <img src="./public/Exclude.svg" alt="Templates" style="height:48px;" />
-          Document &amp; Template Management
-        </div>
+      <div class="capability-label" style="background:#da6261; margin-left: -48px;">
+        <img src="./public/Exclude.svg" alt="Templates" style="height:48px;" />
+        Document &amp; Template Management
       </div>
       
-      <div class="config-box template-box mb-4">
+      <div class="config-box template-box">
         <div class="config-label template-label">Events Captured:</div>
         <div class="row pt-3">
           <div class="col-lg-4 mb-4">
@@ -511,13 +511,11 @@
 
 <!-- ==================== ORGANIZATION & ACCESS ==================== -->
 <section class="org-section">
-  <div class="container-fluid px-4 px-lg-5">
+  <div class="cb-container">
     <div class="org-wrapper">
-      <div class="mb-4">
-        <div class="capability-label" style="background:#40aac7; margin-left: -48px;">
-          <img src="./public/Connection-Control.svg" alt="Org" style="height:48px;" />
-          Organization &amp; Access Management
-        </div>
+      <div class="capability-label" style="background:#40aac7; margin-left: -48px;">
+        <img src="./public/Connection-Control.svg" alt="Org" style="height:48px;" />
+        Organization &amp; Access Management
       </div>
 
       <div class="org-flow-box">
@@ -585,43 +583,39 @@
     </div>
     <div class="row align-items-center position-relative">
       <!-- Left Column: Step 1 & 2 -->
-      <div class="col-lg-5 col-md-6 mb-4">
-        <div class="mb-4">
-          <div class="step-card-wrapper blue step-card--left">
-            <div class="step-card-offset"></div>
-            <div class="step-icon blue-bg">
-              <img src="./public/Group-84105.svg" alt="Upload" />
+      <div class="col-lg-5 col-md-6 d-flex flex-column gap-4 mb-4">
+        <div class="step-card-wrapper blue step-card--left">
+          <div class="step-card-offset"></div>
+          <div class="step-icon blue-bg">
+            <img src="./public/Group-84105.svg" alt="Upload" />
+          </div>
+          <div class="step-card blue">
+            <div class="step-card-body">
+              <h4>Upload</h4>
+              <div class="step-what-you">What You Do</div>
+              <div class="step-action">Upload your PDF and open it in the setup view</div>
             </div>
-            <div class="step-card blue">
-              <div class="step-card-body">
-                <h4>Upload</h4>
-                <div class="step-what-you">What You Do</div>
-                <div class="step-action">Upload your PDF and open it in the setup view</div>
-              </div>
-              <div class="step-esign-bg blue-bg-soft">
-                <div class="step-esign-label">What Cloudbyz ESign Does</div>
-                Renders Every Page So You Can Place Fields Precisely
-              </div>
+            <div class="step-esign-bg blue-bg-soft">
+              <div class="step-esign-label">What Cloudbyz ESign Does</div>
+              Renders Every Page So You Can Place Fields Precisely
             </div>
           </div>
         </div>
         
-        <div>
-          <div class="step-card-wrapper teal step-card--left">
-            <div class="step-card-offset"></div>
-            <div class="step-icon teal-bg">
-              <img src="./public/Union.svg" alt="Configure" />
+        <div class="step-card-wrapper teal step-card--left">
+          <div class="step-card-offset"></div>
+          <div class="step-icon teal-bg">
+            <img src="./public/Union.svg" alt="Configure" />
+          </div>
+          <div class="step-card teal">
+            <div class="step-card-body">
+              <h4>Configure</h4>
+              <div class="step-what-you">What You Do</div>
+              <div class="step-action">Place fields, assign them to signers, set the signing order</div>
             </div>
-            <div class="step-card teal">
-              <div class="step-card-body">
-                <h4>Configure</h4>
-                <div class="step-what-you">What You Do</div>
-                <div class="step-action">Place fields, assign them to signers, set the signing order</div>
-              </div>
-              <div class="step-esign-bg teal-bg-soft">
-                <div class="step-esign-label">What Cloudbyz ESign Does</div>
-                Saves The Configuration As A Document Or Reusable Template
-              </div>
+            <div class="step-esign-bg teal-bg-soft">
+              <div class="step-esign-label">What Cloudbyz ESign Does</div>
+              Saves The Configuration As A Document Or Reusable Template
             </div>
           </div>
         </div>
@@ -658,43 +652,39 @@
       </div>
       
       <!-- Right Column: Step 3 & 4 -->
-      <div class="col-lg-5 col-md-6 mb-4">
-        <div class="mb-4">
-          <div class="step-card-wrapper orange step-card--right">
-            <div class="step-card-offset"></div>
-            <div class="step-icon orange-bg">
-              <img src="./public/Group.svg" alt="Send" />
+      <div class="col-lg-5 col-md-6 d-flex flex-column gap-4 mb-4">
+        <div class="step-card-wrapper orange step-card--right">
+          <div class="step-card-offset"></div>
+          <div class="step-icon orange-bg">
+            <img src="./public/Group.svg" alt="Send" />
+          </div>
+          <div class="step-card orange">
+            <div class="step-card-body">
+              <h4>Send</h4>
+              <div class="step-what-you">What You Do</div>
+              <div class="step-action">Review and send - credits are drawn, invitations go out</div>
             </div>
-            <div class="step-card orange">
-              <div class="step-card-body">
-                <h4>Send</h4>
-                <div class="step-what-you">What You Do</div>
-                <div class="step-action">Review and send - credits are drawn, invitations go out</div>
-              </div>
-              <div class="step-esign-bg orange-bg-soft">
-                <div class="step-esign-label">What Cloudbyz ESign Does</div>
-                Delivers Personalized Signing Links; Notifies Signers In Sequence Or In Parallel
-              </div>
+            <div class="step-esign-bg orange-bg-soft">
+              <div class="step-esign-label">What Cloudbyz ESign Does</div>
+              Delivers Personalized Signing Links; Notifies Signers In Sequence Or In Parallel
             </div>
           </div>
         </div>
         
-        <div>
-          <div class="step-card-wrapper purple step-card--right">
-            <div class="step-card-offset"></div>
-            <div class="step-icon purple-bg">
-              <img src="./public/Union1.svg" alt="Sign & Audit" />
+        <div class="step-card-wrapper purple step-card--right">
+          <div class="step-card-offset"></div>
+          <div class="step-icon purple-bg">
+            <img src="./public/Union1.svg" alt="Sign & Audit" />
+          </div>
+          <div class="step-card purple">
+            <div class="step-card-body">
+              <h4>Sign &amp; Audit</h4>
+              <div class="step-what-you">What You Do</div>
+              <div class="step-action">Recipients open their link and sign from any browser</div>
             </div>
-            <div class="step-card purple">
-              <div class="step-card-body">
-                <h4>Sign &amp; Audit</h4>
-                <div class="step-what-you">What You Do</div>
-                <div class="step-action">Recipients open their link and sign from any browser</div>
-              </div>
-              <div class="step-esign-bg purple-bg-soft">
-                <div class="step-esign-label">What Cloudbyz ESign Does</div>
-                Logs Every Action In Real Time; Notifies You On Completion
-              </div>
+            <div class="step-esign-bg purple-bg-soft">
+              <div class="step-esign-label">What Cloudbyz ESign Does</div>
+              Logs Every Action In Real Time; Notifies You On Completion
             </div>
           </div>
         </div>
