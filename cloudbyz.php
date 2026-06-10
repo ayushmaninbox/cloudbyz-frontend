@@ -12,7 +12,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./cloudbyz.css?v=19" />
+  <link rel="stylesheet" href="./cloudbyz.css?v=25" />
 </head>
 <body>
 
@@ -96,7 +96,7 @@
 
 <!-- ==================== PROCESS SECTION ==================== -->
 <section class="process-section">
-  <div class="container">
+  <div class="cb-container">
     <div class="text-center mb-5">
       <h2 class="section-title">How a Document Moves Through Cloudbyz eSign</h2>
       <p class="section-subtitle">From Upload to Signed — Fully Tracked</p>

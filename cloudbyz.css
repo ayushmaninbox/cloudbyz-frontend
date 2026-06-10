@@ -149,8 +149,8 @@ body {
 /* ── Outer wrapper per card ── */
 .pc-card-outer {
   height: 100%;
-  /* space above for the circle that protrudes out of the card top */
-  padding-top: 70px;
+  /* space above for the dome that protrudes out of the card top */
+  padding-top: 80px;
   box-sizing: border-box;
   position: relative;
 }
@@ -159,7 +159,7 @@ body {
 .process-card {
   position: relative;
   overflow: visible;
-  padding: 70px 32px 40px; /* top clears the half-circle inside */
+  padding: 76px 20px 24px; /* clears the inner circle and gives breathing room */
   text-align: center;
   border-radius: 24px;
   background: #fff;
@@ -168,7 +168,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  z-index: 1; /* creates a stacking context so the white dome renders on top of the card border */
 }
 
 .process-card.pc-blue   { border: 1.8px solid #7eb8f7; }
@@ -176,14 +177,15 @@ body {
 .process-card.pc-orange { border: 1.8px solid #f97040; }
 .process-card.pc-amber  { border: 1.8px solid #e0a820; }
 
-/* ── Circle: sits inside card, top: -70px so it protrudes fully above ── */
+/* ── Circle: sits inside card, top: -58px so it is centered inside the dome ── */
 .pc-icon-wrap {
   position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  height: 140px;
+  top: -58px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 116px;
+  height: 116px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -191,60 +193,67 @@ body {
   z-index: 3;
 }
 
-.pc-icon-bg-blue   { background: #eaf1fd; }
-.pc-icon-bg-cyan   { background: #e6f7f8; }
-.pc-icon-bg-orange { background: #fdeee8; }
-.pc-icon-bg-amber  { background: #fdf4e0; }
+.pc-icon-bg-blue   { background: transparent; }
+.pc-icon-bg-cyan   { background: transparent; }
+.pc-icon-bg-orange { background: transparent; }
+.pc-icon-bg-amber  { background: transparent; }
 
-/* Circle border matches card border color */
-.pc-blue   .pc-icon-wrap { border: 1.8px solid #7eb8f7; }
-.pc-cyan   .pc-icon-wrap { border: 1.8px solid #4dc8d4; }
-.pc-orange .pc-icon-wrap { border: 1.8px solid #f97040; }
-.pc-amber  .pc-icon-wrap { border: 1.8px solid #e0a820; }
+/* Circle border is removed to let the white gap show between circle and dome */
+.pc-blue   .pc-icon-wrap { border: none; }
+.pc-cyan   .pc-icon-wrap { border: none; }
+.pc-orange .pc-icon-wrap { border: none; }
+.pc-amber  .pc-icon-wrap { border: none; }
 
 .pc-icon-img {
-  width: 72px;
-  height: 72px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 /*
   White dome: sits over the card's top border at center,
   masking it so the border appears to curve up around the circle.
-  Exactly as wide as circle + 2px, half as tall.
+  Width is 144px, height is 74px (72px radius + 2px overlap).
 */
 .process-card::before {
   content: '';
   position: absolute;
-  top: -2px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: -72px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 144px;
-  height: 72px;
+  height: 74px;
   background: #fff;
   border-radius: 72px 72px 0 0;
   z-index: 2;
+  box-sizing: border-box;
 }
 
-/* Text & badge above the white dome */
+/* Dome border matches card border color, bottom is open to merge into card */
+.process-card.pc-blue::before   { border: 1.8px solid #7eb8f7; border-bottom: none; }
+.process-card.pc-cyan::before   { border: 1.8px solid #4dc8d4; border-bottom: none; }
+.process-card.pc-orange::before { border: 1.8px solid #f97040; border-bottom: none; }
+.process-card.pc-amber::before  { border: 1.8px solid #e0a820; border-bottom: none; }
+
 .process-card h3,
 .process-card small,
-.process-card > div {
+.process-card > div:not(.pc-icon-wrap) {
   position: relative;
   z-index: 4;
 }
 
 .process-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #1a1a2e;
   font-family: 'Poppins', sans-serif;
 }
 .process-card small {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #4a4f6a;
   display: block;
-  line-height: 1.75;
+  line-height: 1.5;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
@@ -253,8 +262,8 @@ body {
 .badge-status {
   display: inline-block;
   border-radius: 30px;
-  padding: 8px 28px;
-  font-size: 0.9rem;
+  padding: 6px 20px;
+  font-size: 0.82rem;
   font-weight: 600;
   color: #fff;
   letter-spacing: 0.3px;
@@ -744,12 +753,12 @@ body {
 .field-type-card::after {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: -3px;
   left: 20%;
   right: 20%;
   height: 6px;
   background: #c8ebf5; /* Soft, desaturated light-blue bottom accent bar */
-  border-radius: 0 0 4px 4px;
+  border-radius: 30px;
   z-index: 10;
 }
 .field-type-icon {
