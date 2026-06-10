@@ -99,37 +99,57 @@
       <h2 class="section-title">How a Document Moves Through Cloudbyz eSign</h2>
       <p class="section-subtitle">From Upload to Signed — Fully Tracked</p>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
+      <!-- Document Configured -->
       <div class="col-sm-6 col-lg-3 mb-4">
-        <div class="process-card">
-          <img src="./public/Group-840603@2x.png" alt="" class="process-bg" />
-          <h3>Document Configured</h3>
-          <div><span class="badge-status badge-done">Done</span></div>
-          <small>Fields Placed · 3 Signers Assigned ·<br />Sequential Order Set</small>
+        <div class="pc-card-outer">
+          <div class="process-card pc-blue">
+            <div class="pc-icon-wrap pc-icon-bg-blue">
+              <img src="./public/a.png" alt="Document Configured" class="pc-icon-img" />
+            </div>
+            <h3>Document Configured</h3>
+            <div><span class="badge-status badge-done">Done</span></div>
+            <small>Fields Placed · 3 Signers Assigned ·<br />Sequential Order Set</small>
+          </div>
         </div>
       </div>
+      <!-- Invitations Sent -->
       <div class="col-sm-6 col-lg-3 mb-4">
-        <div class="process-card">
-          <img src="./public/Group-84060@2x.png" alt="" class="process-bg" />
-          <h3>Invitations Sent</h3>
-          <div><span class="badge-status badge-done">Done</span></div>
-          <small>Personalized Signing Links Delivered ·<br />No Signer Account Required</small>
+        <div class="pc-card-outer">
+          <div class="process-card pc-cyan">
+            <div class="pc-icon-wrap pc-icon-bg-cyan">
+              <img src="./public/b.png" alt="Invitations Sent" class="pc-icon-img" />
+            </div>
+            <h3>Invitations Sent</h3>
+            <div><span class="badge-status badge-done">Done</span></div>
+            <small>Personalized Signing Links Delivered ·<br />No Signer Account Required</small>
+          </div>
         </div>
       </div>
+      <!-- Signatures In Progress -->
       <div class="col-sm-6 col-lg-3 mb-4">
-        <div class="process-card">
-          <img src="./public/Group-840601@2x.png" alt="" class="process-bg" />
-          <h3>Signatures In Progress</h3>
-          <div><span class="badge-status badge-active">Active</span></div>
-          <small>Signer 1 · Signer 2 · Signer 3<br />Notified And Pending</small>
+        <div class="pc-card-outer">
+          <div class="process-card pc-orange">
+            <div class="pc-icon-wrap pc-icon-bg-orange">
+              <img src="./public/c.png" alt="Signatures In Progress" class="pc-icon-img" />
+            </div>
+            <h3>Signatures In Progress</h3>
+            <div><span class="badge-status badge-active">Active</span></div>
+            <small>Signer 1 · Signer 2 · Signer 3<br />Notified And Pending</small>
+          </div>
         </div>
       </div>
+      <!-- Audit Trail -->
       <div class="col-sm-6 col-lg-3 mb-4">
-        <div class="process-card">
-          <img src="./public/Group-840602@2x.png" alt="" class="process-bg" />
-          <h3>Audit Trail</h3>
-          <div><span class="badge-status badge-live">Live</span></div>
-          <small>Every Open, Field Completion,<br />And Signature Logged With<br />Timestamp And IP</small>
+        <div class="pc-card-outer">
+          <div class="process-card pc-amber">
+            <div class="pc-icon-wrap pc-icon-bg-amber">
+              <img src="./public/d.png" alt="Audit Trail" class="pc-icon-img" />
+            </div>
+            <h3>Audit Trail</h3>
+            <div><span class="badge-status badge-live">Live</span></div>
+            <small>Every Open, Field Completion,<br />And Signature Logged With<br />Timestamp And IP</small>
+          </div>
         </div>
       </div>
     </div>
