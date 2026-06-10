@@ -66,7 +66,7 @@ body {
   padding-right: 24px;
 }
 @media (min-width: 992px) {
-  .cb-container { padding-left: 100px; padding-right: 100px; }
+  .cb-container { padding-left: 80px; padding-right: 80px; }
 }
 
 /* --- Hero Section --- */
@@ -82,18 +82,18 @@ body {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url('./public/Mask-group1.svg') no-repeat left center;
-  background-size: contain;
+  background-size: cover;
   opacity: 1.00;
   pointer-events: none;
 }
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: 400;
   color: #ffffff;
   line-height: 1.2;
 }
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: #d1e2f3;
   font-weight: 400;
 }
@@ -104,13 +104,67 @@ body {
 
 @media (min-width: 992px) {
   .hero-section {
-    padding: 80px 0 0;
-    min-height: auto;
+    height: 640px;
+    box-sizing: border-box;
+    padding: 40px 0 0;
+  }
+  .hero-section > .cb-container,
+  .hero-section > .cb-container > .row {
+    height: 100%;
+  }
+  .hero-section .row > div:first-child {
+    align-self: center;
+  }
+  .hero-section .row > div:last-child {
+    align-self: flex-end;
   }
   .hero-mockup {
     margin-bottom: 0;
-    max-width: none;
-    margin-right: -85px; /* cancel the container's 100px padding (minus the 15px row gutter) so the mockup bleeds to the viewport edge */
+    max-width: 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero-mockup img {
+    max-height: 590px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+  .hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+  .btn-demo, .btn-brief {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+  .compliance-badges-row {
+    gap: 10px 20px;
+  }
+  .compliance-badge {
+    gap: 10px;
+  }
+  .compliance-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+  }
+  .compliance-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .compliance-badge span {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+  .compliance-badge.highlight {
+    padding: 12px 16px;
+    border-radius: 11px;
   }
 }
 
@@ -127,11 +181,11 @@ body {
 }
 @media (max-width: 767px) {
   .section-title { font-size: 1.6rem; }
-  .hero-title { font-size: 2rem; }
+  .hero-title { font-size: 1.8rem; }
 }
 @media (max-width: 991px) {
   .section-title { font-size: 2rem; }
-  .hero-title { font-size: 2.4rem; }
+  .hero-title { font-size: 2.0rem; }
 }
 
 /* --- Process Steps Section --- */

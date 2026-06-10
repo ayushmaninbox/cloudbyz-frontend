@@ -12,7 +12,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./cloudbyz.css?v=38" />
+  <link rel="stylesheet" href="./cloudbyz.css?v=48" />
 </head>
 <body>
 
@@ -52,13 +52,13 @@
   <div class="cb-container">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-4 py-lg-5">
-        <h1 class="hero-title mb-4">Every Signature Accounted For.<br />Every Workflow Under Control.</h1>
-        <p class="hero-subtitle mb-5">Stop chasing signers. Control workflows, track every action, and<br />get documents signed from any device — no account needed.</p>
-        <div class="d-flex flex-wrap gap-3 mb-4" style="gap:12px;">
+        <h1 class="hero-title mb-3">Every Signature Accounted For.<br />Every Workflow Under Control.</h1>
+        <p class="hero-subtitle mb-4">Stop chasing signers. Control workflows, track every action, and<br />get documents signed from any device — no account needed.</p>
+        <div class="d-flex flex-wrap gap-3 mb-3" style="gap:12px;">
           <a href="#" class="btn-demo">Request a Demo <i class="fas fa-chevron-right"></i></a>
           <a href="#" class="btn-brief">Download Product Brief <i class="fas fa-download"></i></a>
         </div>
-        <div class="compliance-badges-row mt-3">
+        <div class="compliance-badges-row mt-2">
           <div class="compliance-badge">
             <div class="compliance-icon" style="background:#023778;">
               <img src="./public/Group-84106.svg" alt="ESIGN" />
