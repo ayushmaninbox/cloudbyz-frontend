@@ -773,6 +773,62 @@ section > .cb-container {
     margin-bottom: 24px;
   }
 
+}
+
+@media (max-width: 575px) {
+  .config-box {
+    padding: 30px 16px;
+  }
+  .auth-circle {
+    width: 60px;
+    height: 60px;
+  }
+  .auth-circle::before {
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+  }
+  .auth-option-item::after {
+    content: '';
+    position: absolute;
+    left: 82px;
+    right: 18px;
+    top: 42px;
+    height: 1.5px;
+    background-color: #47bddd;
+    z-index: 1;
+    display: block;
+    pointer-events: none;
+  }
+  .auth-option-item::before {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 42.75px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-right: 6px solid #47bddd;
+    border-top: 3.8px solid transparent;
+    border-bottom: 3.8px solid transparent;
+    z-index: 1;
+    display: block;
+    pointer-events: none;
+  }
+  .auth-text-container {
+    padding-left: 12px;
+  }
+  .auth-title {
+    font-size: 1rem;
+    margin-top: 0;
+    padding-bottom: 9px;
+    white-space: nowrap;
+  }
+  .auth-desc {
+    font-size: 0.85rem;
+    padding-top: 12px;
+  }
 }/* --- Field Types Section --- */
 .field-card-outer {
   height: 100%;
