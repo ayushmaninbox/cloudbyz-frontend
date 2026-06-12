@@ -126,7 +126,7 @@
             </div>
             <h3>Document Configured</h3>
             <div><span class="badge-status badge-done">Done</span></div>
-            <small>Fields Placed · 3 Signers Assigned ·<br />Sequential Order Set</small>
+            <small>Fields Placed · 3 Signers Assigned · Sequential Order Set</small>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
             </div>
             <h3>Invitations Sent</h3>
             <div><span class="badge-status badge-done">Done</span></div>
-            <small>Personalized Signing Links Delivered ·<br />No Signer Account Required</small>
+            <small>Personalized Signing Links Delivered · No Signer Account Required</small>
           </div>
         </div>
       </div>
@@ -152,7 +152,7 @@
             </div>
             <h3>Signatures In Progress</h3>
             <div><span class="badge-status badge-active">Active</span></div>
-            <small>Signer 1 · Signer 2 · Signer 3<br />Notified And Pending</small>
+            <small>Signer 1 · Signer 2 · Signer 3 · Notified And Pending</small>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@
             </div>
             <h3>Audit Trail</h3>
             <div><span class="badge-status badge-live">Live</span></div>
-            <small>Every Open, Field Completion,<br />And Signature Logged With<br />Timestamp And IP</small>
+            <small>Every Open, Field Completion, And Signature Logged With Timestamp And IP</small>
           </div>
         </div>
       </div>

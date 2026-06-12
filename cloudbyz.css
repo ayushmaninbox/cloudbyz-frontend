@@ -11,9 +11,7 @@ body {
 }
 
 .esign-page-wrapper {
-  max-width: 1920px;
   width: 100%;
-  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -154,7 +152,8 @@ body {
 /* --- Page container (full-width with generous side padding, per design) --- */
 .cb-container {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1920px;
+  margin: auto;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -162,11 +161,56 @@ body {
   .cb-container { padding-left: 80px; padding-right: 80px; }
 }
 
+/* Sections' inner containers have vertical padding as well */
+section > .cb-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (min-width: 992px) {
+  section > .cb-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (max-width: 575px) {
+  section > .cb-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Specific section overrides for inner containers */
+.hero-section > .cb-container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .hero-section > .cb-container {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .template-section > .cb-container,
+  .org-section > .cb-container,
+  .config-section > .cb-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-section > .cb-container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
 /* --- Hero Section --- */
 .hero-section {
   background: linear-gradient(135deg, #05234d 0%, #072d59 50%, #0a3666 100%);
   min-height: 600px;
-  padding: 80px 0 60px;
   position: relative;
   overflow: hidden;
 }
@@ -208,7 +252,6 @@ body {
   .hero-section {
     height: 570px;
     box-sizing: border-box;
-    padding: 30px 0 0;
   }
   .hero-section > .cb-container,
   .hero-section > .cb-container > .row {
@@ -317,12 +360,7 @@ body {
 }
 
 /* --- Process Steps Section --- */
-.process-section { background: #fff; padding: 80px 0; }
-@media (min-width: 1200px) {
-  .process-section .container {
-    max-width: 1240px;
-  }
-}
+.process-section { background: #fff; }
 /* ── Process section row: space for circles above cards ── */
 .process-section .row {
   padding-top: 0px;
@@ -535,7 +573,7 @@ body {
 }
 
 /* --- Why Switch Section --- */
-.why-section { background: #f5f9ff; padding: 80px 0; }
+.why-section { background: #f5f9ff; }
 .issue-card {
   position: relative;
   border-radius: 20px;
@@ -606,7 +644,7 @@ body {
 .issue-card.orange h3 { color: #e96a31; }
 
 /* --- Platform Capabilities Section --- */
-.platform-section { background: #ffffff; padding: 80px 0; }
+.platform-section { background: #ffffff; }
 .capabilities-wrapper {
   background: #f5f9ff;
   border-radius: 20px;
@@ -653,7 +691,7 @@ body {
 }
 
 /* --- Signing Configuration Section --- */
-.config-section { background: #fff; padding: 60px 0; }
+.config-section { background: #fff; }
 .config-box {
   position: relative;
   border: 1px solid #abbee6;
@@ -991,7 +1029,7 @@ body {
 .consent-box p { font-size: 0.875rem; color: #313131; line-height: 1.7; }
 
 /* --- Audit Trail Section --- */
-.audit-section { background: #ffffff; padding: 80px 0; }
+.audit-section { background: #ffffff; }
 .audit-wrapper {
   background: #eaf8f6;
   border-radius: 20px;
@@ -1298,7 +1336,7 @@ body {
 }
 
 /* --- Document & Template Section --- */
-.template-section { background: #fff; padding: 60px 0; }
+.template-section { background: #fff; }
 .template-card {
   border: 1px solid #dddcdc;
   border-radius: 10px;
@@ -1314,7 +1352,7 @@ body {
 .template-card p { font-size: 0.875rem; color: #4b4b4b; line-height: 1.75; margin: 0; }
 
 /* --- Org & Access Section --- */
-.org-section { background: #fff; padding: 60px 0; }
+.org-section { background: #fff; }
 .org-card {
   border: 1px solid #5a9fdc;
   border-radius: 10px;
@@ -1351,7 +1389,7 @@ body {
 .org-card p { font-size: 0.9rem; color: #3b3b3c; line-height: 1.7; margin: 0; }
 
 /* --- How It Works Section --- */
-.how-section { background: #f8fafc; padding: 80px 0; }
+.how-section { background: #f8fafc; }
 .how-works-center {
   display: flex;
   justify-content: center;
@@ -1763,7 +1801,7 @@ body {
 .text-teal { color: #27bbad; }
 .bg-light-blue { background: #f5f9ff; }
 .rounded-section { border-radius: 16px; }
-.section-pad { padding: 80px 0; }
+.section-pad { }
 
 /* --- Responsive Navbar --- */
 @media (max-width: 991px) {
@@ -1782,10 +1820,7 @@ body {
     margin-top: 32px !important;
   }
 }
-@media (max-width: 575px) {
-  .hero-section { padding: 60px 0 40px; }
-  .process-section, .cta-hero, .why-section, .config-section, .audit-section, .template-section, .org-section, .how-section, .cta-bottom { padding: 50px 0; }
-}
+/* Mobile vertical padding constraints are handled globally on the inner containers */
 
 /* --- Document & Template Management Box --- */
 .template-wrapper {
