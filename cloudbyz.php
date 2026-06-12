@@ -606,7 +606,7 @@
     </div>
     <div class="row position-relative how-works-row">
       <!-- Left Column: Step 1 & 2 -->
-      <div class="col-lg-4 col-md-6 d-flex flex-column gap-4 mb-4 how-step-col">
+      <div class="col-lg-4 col-md-6 how-step-col">
         <div class="step-card-wrapper blue step-card--left">
           <div class="step-card-offset"></div>
           <div class="step-icon blue-bg">
@@ -675,7 +675,7 @@
       </div>
       
       <!-- Right Column: Step 3 & 4 -->
-      <div class="col-lg-4 col-md-6 d-flex flex-column gap-4 mb-4 how-step-col">
+      <div class="col-lg-4 col-md-6 how-step-col">
         <div class="step-card-wrapper orange step-card--right">
           <div class="step-card-offset"></div>
           <div class="step-icon orange-bg">
