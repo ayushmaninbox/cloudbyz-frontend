@@ -245,7 +245,7 @@ section > .cb-container {
     font-size: 20px ;
     line-height: 28px ;
     margin-bottom: 24px ;
-    width: 110% ;
+    width: 100% ;
     max-width: 680px ;
   }body .btn-demo, body .btn-brief {
     font-size: 20px ;
@@ -258,7 +258,7 @@ section > .cb-container {
     position: static ;
   }body .compliance-badges-row {
     position: absolute ;
-    bottom: 20px ;
+    bottom: 60px ;
     left: 80px ;
     display: flex ;
     flex-wrap: wrap ;
@@ -883,7 +883,7 @@ section > .cb-container {
   justify-items: center;
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 30px auto;
 }.audit-timeline-svg {
   grid-row: 2 / span 2;
