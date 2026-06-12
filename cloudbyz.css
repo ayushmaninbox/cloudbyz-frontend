@@ -1022,7 +1022,7 @@ section > .cb-container {
   margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
 }
-.field-types-wrapper { margin-top: 40px; }
+.field-types-wrapper { margin-top: 12px; }
 .consent-box {
   position: relative;
   border: 1px solid #47bddd;
@@ -1697,23 +1697,30 @@ section > .cb-container {
 @media (max-width: 767px) { .step-arrow { transform: rotate(90deg); } }
 
 @media (max-width: 991px) {
-  .step-card {
-    overflow: hidden;
-  }
-  .step-icon {
-    position: static;
-    margin-bottom: 16px;
-    box-shadow: none;
-  }
-  .step-card-body {
-    padding: 24px 20px 16px !important;
-  }
-  .step-esign-bg {
-    padding: 12px 20px !important;
-  }
   .connector {
     display: none !important;
   }
+  .how-step-col {
+    gap: 50px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+@media (max-width: 767px) {
+  .how-step-col {
+    display: contents !important;
+  }
+  .how-works-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 50px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .step-card-wrapper.blue { order: 1; }
+  .step-card-wrapper.orange { order: 2; }
+  .step-card-wrapper.teal { order: 3; }
+  .step-card-wrapper.purple { order: 4; }
 }
 
 /* --- CTA Bottom Section --- */
@@ -1908,6 +1915,7 @@ section > .cb-container {
   height: 92px;
   position: relative;
   z-index: 3;
+  margin-left: 80px; /* shift circles right to sit beside the tab */
 }
 .org-flow-icon img {
   width: 100%;
@@ -1943,7 +1951,7 @@ section > .cb-container {
   position: absolute;
   left: 172px;                     /* starts at right boundary of 92px circle (80 + 92 = 172) */
   top: 46px;                       /* center of icon vertically */
-  width: calc(100% - 172px + 12px);/* reaches right across the gap, ending 20px before next column's vertical line */
+  width: calc(100% - 172px);       /* ends exactly at the right border of the card */
   height: 1.5px;
   background: var(--oc);
   z-index: 1;
@@ -1961,13 +1969,15 @@ section > .cb-container {
 }
 .org-flow-card {
   position: relative;
-  height: var(--card-h);
+  height: 450px;
   margin-top: 0;
-  background: linear-gradient(to bottom, var(--ot) 95px, #fff 95px);
+  background: #fff;
   border: 1.5px solid var(--oc);
   border-radius: 16px;
   border-top-left-radius: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 /* Folder tab outline using custom SVGs for mockup-accurate curved profiles */
 .org-flow-card::before {
@@ -1995,39 +2005,33 @@ section > .cb-container {
   background-image: url('data:image/svg+xml;utf8,<svg width="53" height="37" viewBox="-1 0 53 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46 L49.42 37 L0.5 37 Z" fill="%23E9F8F7"/><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46" stroke="%2327BBAD" stroke-width="1.5"/></svg>');
 }
 .org-flow-title {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 95px;
+  min-height: 95px;
+  background: var(--ot);
   margin: 0;
   display: flex;
   align-items: flex-start;
-  padding: 20px 24px 0;
+  padding: 20px 24px 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.18rem;
   line-height: 1.3;
   color: var(--oc);
+  border-radius: 0 14px 0 0;
+  box-sizing: border-box;
   z-index: 3;
 }
 .org-flow-desc {
-  position: absolute;
-  top: 95px; left: 0; right: 0; bottom: 0;
   margin: 0;
   padding: 22px 28px;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: #3f4a54;
+  flex-grow: 1;
   z-index: 3;
 }
 
 /* --- Flow Diagram Responsive Optimization --- */
-@media (min-width: 992px) {
-  .org-flow-icon {
-    margin-left: 80px;              /* shift circles right to sit beside the tab */
-  }
-}
-
 @media (max-width: 991px) {
   .flow-connector-line {
     display: none !important;
@@ -2041,37 +2045,14 @@ section > .cb-container {
     max-width: 100% !important;
     padding: 0 15px;
   }
-  /* Org flow: stack cards, drop the SVG background to a clean tinted card */
+  /* Org flow: 2-in-a-row on tablet */
   .org-flow-row {
-    flex-direction: column;
-    gap: 28px;
+    flex-wrap: wrap;
+    gap: 56px 28px;
   }
-  .org-flow-left-line, .org-flow-right-line { display: none; }
-  .org-flow-icon {
-    margin-left: 0;
-    align-self: center;
-  }
-  .org-flow-card {
-    height: auto;
-    margin-top: 0;
-    background: #fff;
-    border: 1.5px solid var(--oc);
-    border-radius: 14px;
-    overflow: hidden;
-  }
-  .org-flow-card::before,
-  .org-flow-card::after {
-    display: none !important;
-  }
-  .org-flow-title {
-    position: static;
-    height: auto;
-    padding: 20px 24px;
-    background: var(--ot);
-  }
-  .org-flow-desc {
-    position: static;
-    padding: 20px 24px;
+  .org-flow-col {
+    flex: 0 0 calc(50% - 14px);
+    max-width: calc(50% - 14px);
   }
 }
 @media (max-width: 767px) {
@@ -2081,5 +2062,14 @@ section > .cb-container {
   .template-wrapper .capability-label,
   .org-wrapper .capability-label {
     margin-left: -16px !important;
+  }
+  /* Org flow: 1-in-a-row on mobile, left and right lines remain visible */
+  .org-flow-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .org-flow-card {
+    height: auto;
+    min-height: 416px;
   }
 }

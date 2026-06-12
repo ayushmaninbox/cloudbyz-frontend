@@ -604,7 +604,7 @@
       <h2 class="section-title">How It Works</h2>
       <p class="section-subtitle">From upload to signed — four clear steps.</p>
     </div>
-    <div class="row position-relative">
+    <div class="row position-relative how-works-row">
       <!-- Left Column: Step 1 & 2 -->
       <div class="col-lg-4 col-md-6 d-flex flex-column gap-4 mb-4 how-step-col">
         <div class="step-card-wrapper blue step-card--left">
@@ -612,7 +612,7 @@
           <div class="step-icon blue-bg">
             <img src="./public/Group-84105.svg" alt="Upload" />
           </div>
-          <div class="step-card blue">
+          <div class="card step-card blue">
             <div class="step-card-body">
               <h4>Upload</h4>
               <div class="step-what-you">What You Do</div>
@@ -630,7 +630,7 @@
           <div class="step-icon teal-bg">
             <img src="./public/Union.svg" alt="Configure" />
           </div>
-          <div class="step-card teal">
+          <div class="card step-card teal">
             <div class="step-card-body">
               <h4>Configure</h4>
               <div class="step-what-you">What You Do</div>
@@ -656,12 +656,12 @@
             <span class="connector-dot"></span>
             <span class="connector-arrow"></span>
           </div>
-
+ 
           <!-- Central Laptop container -->
           <div class="how-works-laptop-container">
             <img src="./public/Group-83957.svg" alt="Laptop Graphic" class="how-works-laptop" />
           </div>
-
+ 
           <!-- Right Connectors -->
           <div class="connector connector-right connector-top-right">
             <span class="connector-dot"></span>
@@ -681,7 +681,7 @@
           <div class="step-icon orange-bg">
             <img src="./public/Group.svg" alt="Send" />
           </div>
-          <div class="step-card orange">
+          <div class="card step-card orange">
             <div class="step-card-body">
               <h4>Send</h4>
               <div class="step-what-you">What You Do</div>
@@ -699,7 +699,7 @@
           <div class="step-icon purple-bg">
             <img src="./public/Union1.svg" alt="Sign & Audit" />
           </div>
-          <div class="step-card purple">
+          <div class="card step-card purple">
             <div class="step-card-body">
               <h4>Sign &amp; Audit</h4>
               <div class="step-what-you">What You Do</div>
