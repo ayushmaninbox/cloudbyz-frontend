@@ -1035,7 +1035,6 @@ section > .cb-container {
   border-radius: 20px;
   padding: 48px;
   border: 1.5px solid rgba(138, 205, 201, 0.4);
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1828,7 +1827,6 @@ section > .cb-container {
   border-radius: 20px;
   padding: 48px;
   border: 1.5px solid rgba(218, 98, 97, 0.4);
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1851,7 +1849,6 @@ section > .cb-container {
   border-radius: 20px;
   padding: 48px;
   border: 1.5px solid rgba(64, 170, 199, 0.4);
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 32px;

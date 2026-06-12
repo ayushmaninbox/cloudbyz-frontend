@@ -66,7 +66,7 @@
     <div class="row align-items-center">
       <div class="col-xl-6 col-12 mb-5 mb-xl-0 pr-xl-4 py-lg-5">
         <h1 class="hero-title mb-3">Every Signature Accounted For.<br />Every Workflow Under Control.</h1>
-        <p class="hero-subtitle mb-4">Stop chasing signers. Control workflows, track every action, and<br />get documents signed from any device — no account needed.</p>
+        <p class="hero-subtitle mb-4">Stop chasing signers. Control workflows, track every action, and get documents signed from any device — no account needed.</p>
         <div class="d-flex flex-wrap gap-3 mb-3" style="gap:12px;">
           <a href="#" class="btn-demo">Request a Demo <i class="fas fa-chevron-right"></i></a>
           <a href="#" class="btn-brief">Download Product Brief <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px; vertical-align: middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg></a>
@@ -189,7 +189,7 @@
             <h3>No Control Over Signing Order</h3>
           </div>
           <div class="issue-quote">"We Need Legal To Countersign Before The Client Does — But Our Tool Sends To Everyone At Once."</div>
-          <div class="issue-body">Most eSignature tools treat signing as a single event. Cloudbyz eSign lets you set a strict signing<br />sequence so each recipient is notified only when it's their turn — or send to all parties<br />simultaneously if that's what the agreement needs. Both modes, one platform.</div>
+          <div class="issue-body">Most eSignature tools treat signing as a single event. Cloudbyz eSign lets you set a strict signing sequence so each recipient is notified only when it's their turn — or send to all parties simultaneously if that's what the agreement needs. Both modes, one platform.</div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
@@ -200,7 +200,7 @@
             <h3>Audit Trails That Stop at the Signature</h3>
           </div>
           <div class="issue-quote">"We Know It Was Signed. We Have No Idea What Happened Before That."</div>
-          <div class="issue-body">Regulators, auditors, and opposing counsel don't just want the signature - they want the story.<br />Cloudbyz eSign logs every document open, every field completion, and every submission with a<br />timestamp and IP address, not just the final signature event.</div>
+          <div class="issue-body">Regulators, auditors, and opposing counsel don't just want the signature - they want the story. Cloudbyz eSign logs every document open, every field completion, and every submission with a timestamp and IP address, not just the final signature event.</div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
@@ -211,7 +211,7 @@
             <h3>Signers Who Need a Login</h3>
           </div>
           <div class="issue-quote">"Half Our Signers Bounce When They're Asked To Create An Account."</div>
-          <div class="issue-body">External signers receive a personalized link and sign directly in their browser - no account, no<br />download, no password. Returning users can authenticate with Google in one click.</div>
+          <div class="issue-body">External signers receive a personalized link and sign directly in their browser - no account, no download, no password. Returning users can authenticate with Google in one click.</div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
@@ -222,7 +222,7 @@
             <h3>Starting Over for Every Agreement</h3>
           </div>
           <div class="issue-quote">"We Send The Same Contract Every Week And Rebuild It From Scratch Every Time."</div>
-          <div class="issue-body">Create a document template once — fields placed, signing roles assigned, order configured.<br />Reuse it for any new signing cycle by filling in recipient details. Consistent, compliant, and<br />repeatable.</div>
+          <div class="issue-body">Create a document template once — fields placed, signing roles assigned, order configured. Reuse it for any new signing cycle by filling in recipient details. Consistent, compliant, and repeatable.</div>
         </div>
       </div>
     </div>
@@ -295,7 +295,7 @@
               </div>
               <div class="auth-text-container">
                 <div class="auth-title">Email Link</div>
-                <div class="auth-desc">External signers — one-click access,<br />no account needed</div>
+                <div class="auth-desc">External signers — one-click access, no account needed</div>
               </div>
             </div>
           </div>
@@ -306,7 +306,7 @@
               </div>
               <div class="auth-text-container">
                 <div class="auth-title">Google Sign-In</div>
-                <div class="auth-desc">Signers with Google accounts —<br />frictionless one-tap auth</div>
+                <div class="auth-desc">Signers with Google accounts — frictionless one-tap auth</div>
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@
               </div>
               <div class="auth-text-container">
                 <div class="auth-title">Platform Credentials</div>
-                <div class="auth-desc">Registered users already on<br />Cloudbyz eSign</div>
+                <div class="auth-desc">Registered users already on Cloudbyz eSign</div>
               </div>
             </div>
           </div>
@@ -328,32 +328,32 @@
       <div class="config-box">
         <div class="config-label">Field Types Available:</div>
         <div class="row field-types-wrapper">
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-6 col-lg-3 mb-4">
             <div class="field-type-card">
               <img src="./public/Group-84115@2x.png" alt="Signature" class="field-type-icon" />
               <h4>Signature</h4>
-              <p>Draw, Type In A Styled Font,<br />Or Upload An Image</p>
+              <p>Draw, Type In A Styled Font, Or Upload An Image</p>
             </div>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-6 col-lg-3 mb-4">
             <div class="field-type-card">
               <img src="./public/Group-82744.svg" alt="Initials" class="field-type-icon" />
               <h4>Initials</h4>
-              <p>Separate Initials Field,<br />Independently Placed</p>
+              <p>Separate Initials Field, Independently Placed</p>
             </div>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-6 col-lg-3 mb-4">
             <div class="field-type-card">
               <img src="./public/Group-82745.svg" alt="Text" class="field-type-icon" />
               <h4>Text</h4>
-              <p>Free-Form Input The Signer<br />Fills In At Signing Time</p>
+              <p>Free-Form Input The Signer Fills In At Signing Time</p>
             </div>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-6 col-lg-3 mb-4">
             <div class="field-type-card">
               <img src="./public/Group-82746.svg" alt="Pre-filled Text" class="field-type-icon" />
               <h4>Pre-Filled Text</h4>
-              <p>Locked Text Stamped By The<br />Sender - Read-Only For Signers</p>
+              <p>Locked Text Stamped By The Sender - Read-Only For Signers</p>
             </div>
           </div>
         </div>
@@ -408,13 +408,13 @@
             </div>
             <div class="timeline-text text-1">
               <span class="al-title c-created">Document created</span>
-              <span class="al-sub">Sender identity,<br />timestamp, IP</span>
+              <span class="al-sub">Sender identity, timestamp, IP</span>
             </div>
 
             <!-- Node 2 -->
             <div class="timeline-text text-2">
               <span class="al-title c-invitation">Invitation sent</span>
-              <span class="al-sub">Recipient details,<br />timestamp</span>
+              <span class="al-sub">Recipient details, timestamp</span>
             </div>
             <div class="timeline-circle circle-2">
               <img src="./public/Group 84157.png" alt="Invitation sent icon" />
@@ -426,13 +426,13 @@
             </div>
             <div class="timeline-text text-3">
               <span class="al-title c-opened">Document opened</span>
-              <span class="al-sub">Signer identity,<br />device, timestamp, IP</span>
+              <span class="al-sub">Signer identity, device, timestamp, IP</span>
             </div>
 
             <!-- Node 4 -->
             <div class="timeline-text text-4">
               <span class="al-title c-field">Field completed</span>
-              <span class="al-sub">Which field, by<br />whom, timestamp</span>
+              <span class="al-sub">Which field, by whom, timestamp</span>
             </div>
             <div class="timeline-circle circle-4">
               <img src="./public/Group 84159.png" alt="Field completed icon" />
@@ -444,13 +444,13 @@
             </div>
             <div class="timeline-text text-5">
               <span class="al-title c-signature">Signature applied</span>
-              <span class="al-sub">Signer, reason<br />selected, timestamp, IP</span>
+              <span class="al-sub">Signer, reason selected, timestamp, IP</span>
             </div>
 
             <!-- Node 6 -->
             <div class="timeline-text text-6">
               <span class="al-title c-completed">Document completed</span>
-              <span class="al-sub">Final status, all<br />parties confirmed</span>
+              <span class="al-sub">Final status, all parties confirmed</span>
             </div>
             <div class="timeline-circle circle-6">
               <img src="./public/Group 84161.png" alt="Document completed icon" />
@@ -462,13 +462,13 @@
             </div>
             <div class="timeline-text text-7">
               <span class="al-title c-declined">Document declined</span>
-              <span class="al-sub">Reason, signer<br />identity, timestamp</span>
+              <span class="al-sub">Reason, signer identity, timestamp</span>
             </div>
 
             <!-- Node 8 -->
             <div class="timeline-text text-8">
               <span class="al-title c-cancelled">Document cancelled</span>
-              <span class="al-sub">Actioned by whom,<br />timestamp</span>
+              <span class="al-sub">Actioned by whom, timestamp</span>
             </div>
             <div class="timeline-circle circle-8">
               <img src="./public/Group 84163.png" alt="Document cancelled icon" />
