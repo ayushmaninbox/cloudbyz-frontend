@@ -120,7 +120,7 @@
       <!-- Document Configured -->
       <div class="col-sm-6 col-lg-3 mb-4">
         <div class="pc-card-outer">
-          <div class="process-card pc-blue">
+          <div class="card process-card pc-blue">
             <div class="pc-icon-wrap pc-icon-bg-blue">
               <img src="./public/a.png" alt="Document Configured" class="pc-icon-img" />
             </div>
@@ -133,7 +133,7 @@
       <!-- Invitations Sent -->
       <div class="col-sm-6 col-lg-3 mb-4">
         <div class="pc-card-outer">
-          <div class="process-card pc-cyan">
+          <div class="card process-card pc-cyan">
             <div class="pc-icon-wrap pc-icon-bg-cyan">
               <img src="./public/b.png" alt="Invitations Sent" class="pc-icon-img" />
             </div>
@@ -146,7 +146,7 @@
       <!-- Signatures In Progress -->
       <div class="col-sm-6 col-lg-3 mb-4">
         <div class="pc-card-outer">
-          <div class="process-card pc-orange">
+          <div class="card process-card pc-orange">
             <div class="pc-icon-wrap pc-icon-bg-orange">
               <img src="./public/c.png" alt="Signatures In Progress" class="pc-icon-img" />
             </div>
@@ -159,7 +159,7 @@
       <!-- Audit Trail -->
       <div class="col-sm-6 col-lg-3 mb-4">
         <div class="pc-card-outer">
-          <div class="process-card pc-amber">
+          <div class="card process-card pc-amber">
             <div class="pc-icon-wrap pc-icon-bg-amber">
               <img src="./public/d.png" alt="Audit Trail" class="pc-icon-img" />
             </div>
@@ -328,32 +328,40 @@
       <div class="config-box">
         <div class="config-label">Field Types Available:</div>
         <div class="row field-types-wrapper">
-          <div class="col-6 col-lg-3 mb-4">
-            <div class="field-type-card">
-              <img src="./public/Group-84115@2x.png" alt="Signature" class="field-type-icon" />
-              <h4>Signature</h4>
-              <p>Draw, Type In A Styled Font, Or Upload An Image</p>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="field-card-outer">
+              <div class="card field-type-card">
+                <img src="./public/Group-84115@2x.png" alt="Signature" class="field-type-icon" />
+                <h4>Signature</h4>
+                <p>Draw, Type In A Styled Font, Or Upload An Image</p>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-lg-3 mb-4">
-            <div class="field-type-card">
-              <img src="./public/Group-82744.svg" alt="Initials" class="field-type-icon" />
-              <h4>Initials</h4>
-              <p>Separate Initials Field, Independently Placed</p>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="field-card-outer">
+              <div class="card field-type-card">
+                <img src="./public/Group-82744.svg" alt="Initials" class="field-type-icon" />
+                <h4>Initials</h4>
+                <p>Separate Initials Field, Independently Placed</p>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-lg-3 mb-4">
-            <div class="field-type-card">
-              <img src="./public/Group-82745.svg" alt="Text" class="field-type-icon" />
-              <h4>Text</h4>
-              <p>Free-Form Input The Signer Fills In At Signing Time</p>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="field-card-outer">
+              <div class="card field-type-card">
+                <img src="./public/Group-82745.svg" alt="Text" class="field-type-icon" />
+                <h4>Text</h4>
+                <p>Free-Form Input The Signer Fills In At Signing Time</p>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-lg-3 mb-4">
-            <div class="field-type-card">
-              <img src="./public/Group-82746.svg" alt="Pre-filled Text" class="field-type-icon" />
-              <h4>Pre-Filled Text</h4>
-              <p>Locked Text Stamped By The Sender - Read-Only For Signers</p>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="field-card-outer">
+              <div class="card field-type-card">
+                <img src="./public/Group-82746.svg" alt="Pre-filled Text" class="field-type-icon" />
+                <h4>Pre-Filled Text</h4>
+                <p>Locked Text Stamped By The Sender - Read-Only For Signers</p>
+              </div>
             </div>
           </div>
         </div>
@@ -542,7 +550,7 @@
             </div>
             <span class="org-flow-left-line"></span>
             <span class="org-flow-right-line"></span>
-            <div class="org-flow-card">
+            <div class="card org-flow-card">
               <h4 class="org-flow-title">Admin Controls For The Teams Who Need Them.</h4>
               <p class="org-flow-desc">Cloudbyz eSign Supports Both Individual Users And Multi-Member Organizations With Shared Document Visibility And Centralized Admin Controls.</p>
             </div>
@@ -554,7 +562,7 @@
             </div>
             <span class="org-flow-left-line"></span>
             <span class="org-flow-right-line"></span>
-            <div class="org-flow-card">
+            <div class="card org-flow-card">
               <h4 class="org-flow-title">User Management (Admin)</h4>
               <p class="org-flow-desc">Activate Or Deactivate Team Members - Assign Or Remove Admin Roles - Reassign All Documents Owned By A Departing User To Another Member — No Documents Are Orphaned</p>
             </div>
@@ -566,7 +574,7 @@
             </div>
             <span class="org-flow-left-line"></span>
             <span class="org-flow-right-line"></span>
-            <div class="org-flow-card">
+            <div class="card org-flow-card">
               <h4 class="org-flow-title">Credit System</h4>
               <p class="org-flow-desc">Credits Are Consumed When A Document Is Sent For Signature - Organizations Share A Credit Pool Across All Members - Individual (Personal) Accounts Have Their Own Credit Balance - Admins Can View Current Balance, Usage History, And Refill Credits</p>
             </div>
@@ -578,7 +586,7 @@
             </div>
             <span class="org-flow-left-line"></span>
             <span class="org-flow-right-line"></span>
-            <div class="org-flow-card">
+            <div class="card org-flow-card">
               <h4 class="org-flow-title">Analytics</h4>
               <p class="org-flow-desc">Event Volume Trends Over Time (24h, 7d, 30d, 90d) - Activity Breakdown By Event Type - Peak Usage By Hour And Day Of Week - Top Active Users Within The Organization</p>
             </div>
