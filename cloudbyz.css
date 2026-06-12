@@ -7,27 +7,69 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #3b3b3c;
   overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.esign-page-wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 /* --- Navbar --- */
-.navbar-brand img { height: 48px; }
-.navbar { border-bottom: 1px solid #dcd8d8; background: #fff; }
+.navbar-brand {
+  margin: 0px 16px 0px 0px !important;
+  padding: 16px 0px !important;
+  display: inline-block;
+  height: 76.63px;
+  box-sizing: border-box;
+}
+.navbar-brand img {
+  height: 44.63px !important;
+  width: auto;
+  display: block;
+}
+.navbar {
+  border-bottom: 1px solid #dcd8d8;
+  background: #fff;
+  padding: 0px !important;
+}
 /* Bootstrap only flexes .container/.container-fluid inside a navbar; our custom container needs the same */
-.navbar > .cb-container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.navbar > .cb-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
 @media (min-width: 992px) {
-  .navbar-right-group {
-    gap: 24px;
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
   }
 }
 .nav-item-custom {
-  color: #3b3b3c !important;
+  color: #262626 !important;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 0.75rem !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  padding: 10px 6px !important;
   text-decoration: none;
   display: inline-block;
   white-space: nowrap;
+}
+@media (min-width: 992px) {
+  .nav-item-custom {
+    font-size: 16px !important;
+    padding: 10px 6px !important;
+  }
 }
 .nav-item-custom:hover,
 .nav-item-custom.active {
@@ -49,14 +91,65 @@ body {
 .nav-contact {
   color: #009edb !important;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 0.5rem !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  padding: 10px 6px !important;
   text-decoration: none;
   white-space: nowrap;
 }
+@media (min-width: 992px) {
+  .nav-contact {
+    font-size: 16px !important;
+    padding: 10px 6px !important;
+  }
+}
 .nav-contact:hover { color: #007bb5 !important; text-decoration: none; }
-.nav-divider { border-right: 1.5px solid #009edb; height: 18px; display: inline-block; margin: 0 6px; vertical-align: middle; }
+.nav-divider { border-right: 1.5px solid #009edb; height: 16px; display: inline-block; margin: 0 6px; vertical-align: middle; }
+
+/* --- Medium Desktop Spacing Overrides (992px to 1199px) --- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cb-container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  .navbar-brand {
+    margin-right: 4px !important;
+    padding: 16px 0px !important;
+    height: 70px !important;
+  }
+  .navbar-brand img {
+    height: 30px !important;
+  }
+  .navbar-nav {
+    gap: 4px !important;
+  }
+  .nav-item-custom {
+    font-size: 13px !important;
+    padding: 8px 2px !important;
+  }
+  .nav-contact {
+    font-size: 13px !important;
+    padding: 8px 2px !important;
+  }
+  .nav-divider {
+    margin: 0 3px !important;
+  }
+  .btn-signin {
+    padding: 6px 12px !important;
+    font-size: 13px !important;
+  }
+  .compliance-badges-row {
+    left: 24px !important;
+    gap: 8px 16px !important;
+    max-width: calc(100% - 48px) !important;
+  }
+  .compliance-badge span {
+    font-size: 11px !important;
+  }
+  .compliance-badge {
+    gap: 6px !important;
+  }
+}
 
 /* --- Page container (full-width with generous side padding, per design) --- */
 .cb-container {
@@ -77,6 +170,12 @@ body {
   position: relative;
   overflow: hidden;
 }
+.hero-section > .cb-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
 .hero-section::before {
   content: '';
   position: absolute;
@@ -87,15 +186,18 @@ body {
   pointer-events: none;
 }
 .hero-title {
+  font-family: 'Poppins', sans-serif;
   font-size: 2.1rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   line-height: 1.2;
 }
 .hero-subtitle {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
-  color: #d1e2f3;
+  color: #ffffff;
   font-weight: 400;
+  line-height: 1.3;
 }
 .hero-mockup {
   max-width: 100%;
@@ -104,9 +206,9 @@ body {
 
 @media (min-width: 992px) {
   .hero-section {
-    height: 640px;
+    height: 570px;
     box-sizing: border-box;
-    padding: 40px 0 0;
+    padding: 30px 0 0;
   }
   .hero-section > .cb-container,
   .hero-section > .cb-container > .row {
@@ -126,45 +228,71 @@ body {
     justify-content: flex-end;
   }
   .hero-mockup img {
-    max-height: 590px;
-    width: auto;
-    max-width: 100%;
+    width: 100% !important;
+    height: auto !important;
     display: block;
   }
   .hero-title {
-    font-size: 2.5rem;
-    line-height: 1.25;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px !important;
+    line-height: 48px !important;
+    font-weight: 300;
+    margin-bottom: 16px !important;
   }
   .hero-subtitle {
-    font-size: 1.15rem;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    margin-bottom: 24px !important;
+    width: 110% !important;
+    max-width: 680px !important;
   }
   .btn-demo, .btn-brief {
-    font-size: 1rem;
-    padding: 12px 24px;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    padding: 15px 25px !important;
+  }
+  .btn-brief {
+    border-width: 2px !important;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .hero-section .row > div:first-child {
+    position: static !important;
   }
   .compliance-badges-row {
-    gap: 10px 20px;
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 80px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px 32px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 10;
+    width: auto !important;
+    max-width: calc(100% - 160px) !important;
   }
   .compliance-badge {
-    gap: 10px;
+    gap: 10px !important;
+    flex-shrink: 0 !important;
   }
   .compliance-icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 11px;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 11px !important;
   }
   .compliance-icon img {
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
   }
   .compliance-badge span {
-    font-size: 0.85rem;
-    line-height: 1.2;
+    font-size: 0.85rem !important;
+    line-height: 1.25 !important;
+    white-space: nowrap !important;
   }
   .compliance-badge.highlight {
-    padding: 12px 16px;
-    border-radius: 11px;
+    padding: 12px 16px !important;
+    border-radius: 11px !important;
   }
 }
 
@@ -197,7 +325,7 @@ body {
 }
 /* ── Process section row: space for circles above cards ── */
 .process-section .row {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 /* ── Outer wrapper per card ── */
@@ -1028,7 +1156,7 @@ body {
 .text-8   { grid-column: 8; grid-row: 1; }
 .circle-8 { grid-column: 8; grid-row: 3; }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .audit-timeline-grid {
     grid-template-columns: 80px 1fr;
     grid-template-rows: repeat(8, auto);
@@ -1640,12 +1768,19 @@ body {
 /* --- Responsive Navbar --- */
 @media (max-width: 991px) {
   .navbar-collapse { background: #fff; padding: 16px; border-top: 1px solid #eee; margin-top: 8px; }
-  .navbar-right-group { width: 100%; align-items: stretch !important; gap: 12px; }
+  .navbar-nav { width: 100%; align-items: stretch !important; gap: 12px; }
   .nav-item-custom { display: block; padding: 10px 12px !important; border-bottom: 1px solid #f5f5f5; width: 100%; }
   .btn-signin { display: block; text-align: center; width: 100%; }
   .nav-contact-group { flex-direction: row; gap: 4px; justify-content: flex-start; padding: 6px 12px; border-bottom: 1px solid #f5f5f5; width: 100%; }
   .nav-contact { padding: 4px 6px !important; }
   .nav-divider { border-right: 1.5px solid #009edb; height: 16px; margin: 0 4px; }
+  .compliance-badges-row {
+    position: static !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px 16px !important;
+    margin-top: 32px !important;
+  }
 }
 @media (max-width: 575px) {
   .hero-section { padding: 60px 0 40px; }
@@ -1899,4 +2034,3 @@ body {
     margin-left: -16px !important;
   }
 }
-

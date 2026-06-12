@@ -8,11 +8,11 @@
   <!-- Bootstrap 4.5.1 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" />
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Inter:wght@500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Inter:wght@400;500;600&family=Source+Serif+4:wght@300;400;600&display=swap" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./cloudbyz.css?v=48" />
+  <link rel="stylesheet" href="./cloudbyz.css?v=68" />
 </head>
 <body>
 
@@ -26,37 +26,50 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
-      <div class="d-flex align-items-lg-center flex-column flex-lg-row ml-auto navbar-right-group">
-        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
-          <a class="nav-item-custom active" href="#">Products</a>
-          <a class="nav-item-custom" href="#">Platform</a>
-          <a class="nav-item-custom" href="#">Services</a>
-          <a class="nav-item-custom" href="#">Resources</a>
-          <a class="nav-item-custom" href="#">Company</a>
-        </div>
-        
-        <div class="d-flex align-items-center flex-nowrap nav-contact-group">
-          <a href="#" class="nav-contact">Contact Us</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link nav-item-custom active" id="productsDropdown" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-item-custom" id="industriesDropdown" href="#">Industries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-item-custom" id="platformdropdown" href="#">Platform</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-item-custom" id="servicesDropdown" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-item-custom" id="resourcesDropdown" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-item-custom" id="companyDropdown" href="#">Company</a>
+        </li>
+        <li class="nav-item d-flex align-items-center flex-nowrap nav-contact-group">
+          <a href="#" class="nav-link nav-contact">Contact Us</a>
           <span class="nav-divider"></span>
-          <a href="#" class="nav-contact">Support</a>
-        </div>
-        
-        <a href="#" class="btn btn-signin">Sign in</a>
-      </div>
+          <a href="#" class="nav-link nav-contact">Support</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="btn btn-signin">Request Demo <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-left: 6px;"></i></a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+
+
 
 <!-- ==================== HERO ==================== -->
 <section class="hero-section">
   <div class="cb-container">
     <div class="row align-items-center">
-      <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-4 py-lg-5">
+      <div class="col-xl-6 col-12 mb-5 mb-xl-0 pr-xl-4 py-lg-5">
         <h1 class="hero-title mb-3">Every Signature Accounted For.<br />Every Workflow Under Control.</h1>
         <p class="hero-subtitle mb-4">Stop chasing signers. Control workflows, track every action, and<br />get documents signed from any device — no account needed.</p>
         <div class="d-flex flex-wrap gap-3 mb-3" style="gap:12px;">
           <a href="#" class="btn-demo">Request a Demo <i class="fas fa-chevron-right"></i></a>
-          <a href="#" class="btn-brief">Download Product Brief <i class="fas fa-download"></i></a>
+          <a href="#" class="btn-brief">Download Product Brief <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px; vertical-align: middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg></a>
         </div>
         <div class="compliance-badges-row mt-2">
           <div class="compliance-badge">
@@ -85,7 +98,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 pr-lg-0">
+      <div class="col-xl-6 pr-xl-0 d-none d-xl-block">
         <div class="hero-mockup">
           <img src="./public/Group 83967 (1).png" alt="Cloudbyz eSign Platform" />
         </div>
@@ -93,6 +106,8 @@
     </div>
   </div>
 </section>
+
+<div class="esign-page-wrapper">
 
 <!-- ==================== PROCESS SECTION ==================== -->
 <section class="process-section">
@@ -692,6 +707,8 @@
     </div>
   </div>
 </section>
+
+</div> <!-- /.esign-page-wrapper -->
 
 <!-- Scroll to top -->
 <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
