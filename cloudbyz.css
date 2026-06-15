@@ -21,18 +21,15 @@ body {
 }body .navbar {
   border-bottom: 1px solid #dcd8d8;
   background: #fff;
-  padding: 0px ;
-}body /* --- Navbar --- */
-.navbar > .cb-container {
+  width: 100%;
+  padding: 0;
+}
+body .navbar > .cb-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: 1920px;
   width: 100%;
-  margin: 0 auto;
-  padding-left: 24px ;
-  padding-right: 24px ;
 }
 @media (min-width: 992px) {
 body .navbar-nav {
@@ -113,9 +110,7 @@ body .cb-container {
     padding: 6px 12px ;
     font-size: 13px ;
   }body .compliance-badges-row {
-    left: 24px ;
     gap: 8px 16px ;
-    max-width: calc(100% - 48px) ;
   }body .compliance-badge span {
     font-size: 11px ;
   }body .compliance-badge {
@@ -126,69 +121,63 @@ body .cb-container {
 .cb-container {
   width: 100%;
   max-width: 1920px;
-  margin: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin: 0 auto;
 }
-@media (min-width: 992px) {
-.cb-container { padding-left: 80px; padding-right: 80px; }
-
+/* --- Page wrapper --- */
+.cloudbyzsign {
+  width: 100%;
+}
+/* --- Section spacing --- */
+section {
+  padding: 0;
 }
 section > .cb-container {
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 @media (min-width: 992px) {
-section > .cb-container {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  section > .cb-container {
     padding-left: 80px;
     padding-right: 80px;
   }
-
 }
 @media (max-width: 575px) {
-section > .cb-container {
+  section > .cb-container {
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 16px;
     padding-right: 16px;
   }
-
 }
 .hero-section > .cb-container {
   padding-top: 80px;
   padding-bottom: 60px;
 }
 @media (min-width: 992px) {
-.hero-section > .cb-container {
+  .hero-section > .cb-container {
     padding-top: 30px;
     padding-bottom: 0;
-  }.template-section > .cb-container,
+  }
+  .template-section > .cb-container,
   .org-section > .cb-container,
   .config-section > .cb-container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
 }
 @media (max-width: 575px) {
-.hero-section > .cb-container {
+  .hero-section > .cb-container {
     padding-top: 60px;
     padding-bottom: 40px;
   }
-
 }/* --- Hero Section --- */
 .hero-section {
   background: linear-gradient(135deg, #05234d 0%, #072d59 50%, #0a3666 100%);
   min-height: 600px;
   position: relative;
   overflow: hidden;
-}.hero-section > .cb-container {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
 }.hero-section::before {
   content: '';
   position: absolute;
@@ -217,7 +206,8 @@ section > .cb-container {
 .hero-section {
     height: 570px;
     box-sizing: border-box;
-  }.hero-section > .cb-container,
+  }
+  .hero-section > .cb-container,
   .hero-section > .cb-container > .row {
     height: 100%;
   }.hero-section .row > div:first-child {
@@ -254,20 +244,12 @@ section > .cb-container {
   }body .btn-brief {
     border-width: 2px ;
     border-color: rgba(255, 255, 255, 0.8) ;
-  }body .hero-section .row > div:first-child {
-    position: static ;
   }body .compliance-badges-row {
-    position: absolute ;
-    bottom: 60px ;
-    left: 80px ;
     display: flex ;
     flex-wrap: wrap ;
     gap: 12px 32px ;
-    margin: 0 ;
+    margin-top: 32px ;
     padding: 0 ;
-    z-index: 10;
-    width: auto ;
-    max-width: calc(100% - 160px) ;
   }body .compliance-badge {
     gap: 10px ;
     flex-shrink: 0 ;
@@ -1080,6 +1062,7 @@ section > .cb-container {
     border: 1.5px dotted #c3cfdf;
     border-radius: 50%;
     pointer-events: none;
+  }
   .circle-inner {
     position: absolute;
     width: 57px;

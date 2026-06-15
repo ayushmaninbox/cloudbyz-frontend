@@ -12,9 +12,11 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./cloudbyz.css?v=71" />
+  <link rel="stylesheet" href="./cloudbyz.css" />
 </head>
 <body>
+
+<div class="cloudbyzsign">
 
 <!-- ==================== NAVBAR ==================== -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -522,21 +524,21 @@
         <div class="config-label template-label">Events Captured:</div>
         <div class="row pt-3">
           <div class="col-lg-12 col-xl-4 mb-4">
-            <div class="template-card h-100">
+            <div class="card template-card h-100">
               <img src="./public/Collaborative-Approach.svg" alt="Build Once" class="template-icon" />
               <h4>Build it once. Use it every time</h4>
               <p>Create templates with fields pre-placed and signing roles pre-assigned. When you need to send, fill in the actual recipient names and emails — the structure is already there.</p>
             </div>
           </div>
           <div class="col-lg-12 col-xl-4 mb-4">
-            <div class="template-card h-100">
+            <div class="card template-card h-100">
               <img src="./public/Technical-Support@2x.png" alt="Template Capabilities" class="template-icon" />
               <h4>Template Capabilities</h4>
               <p>Place all field types on the PDF and assign each to a named role (e.g., “Client,” “Legal,” “Approver”) - Set sequential or parallel signing order at the template level - Add comments or instructions that appear to signers at signing time - Use for one-off documents or repeat workflows</p>
             </div>
           </div>
           <div class="col-lg-12 col-xl-4 mb-4">
-            <div class="template-card h-100">
+            <div class="card template-card h-100">
               <img src="./public/Training-and-Education@2x.png" alt="Document Management" class="template-icon" />
               <h4>Document Management</h4>
               <p>Track all documents across statuses: Draft, Sent for Signature, Completed, Cancelled - Search, filter, and sort by status, date, or author - Preview any document alongside its full event history - Download the final signed PDF from any completed document - Resend a signing invitation to a specific recipient without resetting the whole workflow - Manually cancel an in-progress document when needed - Reassign documents between users at the admin level</p>
@@ -733,6 +735,8 @@
 </section>
 
 </div> <!-- /.esign-page-wrapper -->
+
+</div> <!-- /.cloudbyzsign -->
 
 <!-- Scroll to top -->
 <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
