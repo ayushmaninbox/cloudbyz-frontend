@@ -556,7 +556,7 @@
             </div>
           </div>
           <!-- Card 4: Analytics (teal) -->
-          <div class="org-flow-col org-flow-col--last" style="--oc:#27BBAD; --ot:#E9F8F7;">
+          <div class="org-flow-col org-flow-col" style="--oc:#27BBAD; --ot:#E9F8F7;">
             <div class="org-flow-icon">
               <img src="./public/Group-84133@2x.png" alt="Analytics" />
             </div>
