@@ -406,11 +406,11 @@
         <div class="py-3">
           <div class="audit-timeline-grid">
             <!-- Inline SVG connection lines for desktop -->
-            <svg class="audit-timeline-svg" viewBox="0 0 1000 278" preserveAspectRatio="none" aria-hidden="true">
-              <!-- Connection Lines -->
-              <path d="M 102 112 L 148 166 M 227 166 L 273 112 M 352 112 L 398 166 M 477 166 L 523 112 M 602 112 L 648 166 M 727 166 L 773 112 M 852 112 L 898 166" 
-                    fill="none" stroke="#c3cfdf" stroke-width="2" stroke-dasharray="6,6" stroke-linecap="round" />
-            </svg>
+             <svg class="audit-timeline-svg" viewBox="0 0 1000 278" preserveAspectRatio="none" aria-hidden="true">
+               <!-- Connection Lines -->
+               <path d="M 63 70 L 188 217 L 313 70 L 438 217 L 563 70 L 688 217 L 813 70 L 938 217" 
+                     fill="none" stroke="#c3cfdf" stroke-width="2" stroke-dasharray="6,6" stroke-linecap="round" />
+             </svg>
 
             <!-- Node 1 -->
             <div class="timeline-circle circle-1">
