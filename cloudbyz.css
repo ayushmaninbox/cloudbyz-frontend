@@ -170,7 +170,7 @@ body {
     width: 20px ;
     height: 20px ;
   }body .compliance-badge span {
-    font-size: 13.6px ;
+    font-size: 16px ;
     line-height: 1.25 ;
     white-space: nowrap ;
   }body .compliance-badge.highlight {
@@ -180,11 +180,11 @@ body {
 
 }/* --- Section Headings --- */
 .section-title {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 300;
   color: #3b3b3c;
 }.section-subtitle {
-  font-size: 17.6px;
+  font-size: 16px;
   color: #626263;
   font-weight: 400;
 }
@@ -262,12 +262,12 @@ body {
   position: relative;
   z-index: 4;
 }.process-card h3 {
-  font-size: 18.4px;
+  font-size: 18px;
   font-weight: 700;
   color: #1a1a2e;
   font-family: 'Poppins', sans-serif;
 }.process-card small {
-  font-size: 13.6px;
+  font-size: 14px;
   color: #4a4f6a;
   display: block;
   line-height: 1.5;
@@ -278,7 +278,7 @@ body {
   display: inline-block;
   border-radius: 30px;
   padding: 6px 20px;
-  font-size: 13.12px;
+  font-size: 14px;
   font-weight: 600;
   color: #fff;
   letter-spacing: 0.3px;
@@ -379,12 +379,12 @@ body {
   border-radius: 8px;
   padding: 12px 16px;
   font-style: italic;
-  font-size: 14.72px;
+  font-size: 16px;
   color: #3b3b3c;
   font-weight: 500;
   line-height: 1.55;
 }.issue-body {
-  font-size: 14.08px;
+  font-size: 14px;
   line-height: 1.6;
   color: #4b5563;
 }.issue-card.blue { border: 1.5px solid #47bddd; }.issue-card.blue .issue-side-bar { background: #47bddd; }.issue-card.blue h3 { color: #00a8cc; }.issue-card.yellow { border: 1.5px solid #dc9d24; }.issue-card.yellow .issue-side-bar { background: #dc9d24; }.issue-card.yellow h3 { color: #d09419; }.issue-card.red { border: 1.5px solid #da6261; }.issue-card.red .issue-side-bar { background: #da6261; }.issue-card.red h3 { color: #da6261; }.issue-card.orange { border: 1.5px solid #ff854e; }.issue-card.orange .issue-side-bar { background: #ff854e; }.issue-card.orange h3 { color: #e96a31; }/* --- Platform Capabilities Section --- */
@@ -411,7 +411,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  font-size: 17.6px;
+  font-size: 18px;
   font-weight: 600;
   max-width: 380px;
   margin-left: -48px; 
@@ -422,7 +422,7 @@ body {
   }
 
 }.capability-label img { height: 48px; }.capability-label.teal { background: #27bbad; }.capability-label.red { background: #da6261; }.capability-label.cyan { background: #40aac7; }.capability-desc { font-size: 16px; font-weight: 500; color: #414141; padding-left: 10px; margin-bottom: 0; }.capability-text {
-  font-size: 14.72px;
+  font-size: 14px;
   line-height: 1.65;
   color: #4b5563;
   padding-left: 10px;
@@ -444,7 +444,7 @@ body {
   border-radius: 12px 12px 0 0;
   padding: 0 24px;
   font-weight: 600;
-  font-size: 15.2px;
+  font-size: 16px;
   color: #4a6ca9;
   height: 39px;
   display: flex;
@@ -528,10 +528,10 @@ body {
 }.flow-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 18.4px;
+  font-size: 18px;
   color: #22a5c8;
 }.flow-desc {
-  font-size: 15.2px;
+  font-size: 16px;
   color: #4b4b4b;
   line-height: 1.6;
 }/* --- Signee Authentication Redesign Styles --- */
@@ -635,14 +635,14 @@ body {
 }.auth-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: #009edb;
   margin: 6px 0 0 0;               
   line-height: 1.2;
   padding-bottom: 9px;             
 }.auth-desc {
   font-family: 'Poppins', sans-serif;
-  font-size: 14.72px;
+  font-size: 16px;
   color: #4b4b4b;
   line-height: 1.45;
   margin: 0;
@@ -703,8 +703,11 @@ body {
   .auth-title {
     font-size: 16px;
     margin-top: 0;
-    padding-bottom: 9px;
-    white-space: nowrap;
+    padding-bottom: 6px;
+    white-space: normal;
+  }
+  .auth-options-wrapper > div:nth-child(n+2) .auth-title {
+    margin-top: -16px;
   }
   .auth-desc {
     font-size: 13.6px;
@@ -760,12 +763,12 @@ body {
   object-fit: contain;
   z-index: 15;
 }.field-type-card h4 {
-  font-size: 17.6px;
+  font-size: 16px;
   font-weight: 600;
   color: #3b3b3c;
   font-family: 'Poppins', sans-serif;
 }.field-type-card p {
-  font-size: 13.12px;
+  font-size: 14px;
   color: #4b5563;
   line-height: 1.5;
   margin-bottom: 0;
@@ -1016,10 +1019,10 @@ body {
     z-index: 2;
   }
   .al-title {
-    font-size: 16.8px;
+    font-size: 16px;
   }
   .al-sub {
-    font-size: 14.4px;
+    font-size: 14px;
   }
 }
 
@@ -1099,11 +1102,11 @@ body {
 }.audit-access-box h4 {
   font-weight: 600;
   color: #1ea4c9;
-  font-size: 16.8px;
+  font-size: 16px;
   margin-bottom: 8px;
   font-family: 'Poppins', sans-serif;
 }.audit-access-box p {
-  font-size: 14.08px;
+  font-size: 14px;
   color: #4b4b4b;
   line-height: 1.6;
   margin-bottom: 0;
@@ -1204,10 +1207,10 @@ body {
   padding-left: 48px;
 }.step-card--right .step-card-body {
   padding-right: 48px;
-}.step-card h4 { font-size: 18.4px; font-weight: 600; margin: 0; }.step-card.blue h4 { color: #3871e0; }.step-card.teal h4 { color: #27bbad; }.step-card.orange h4 { color: #ff854e; }.step-card.purple h4 { color: #c454b6; }.step-what-you { font-size: 13.12px; font-weight: 600; color: #4a5568; margin-bottom: 0; }.step-action { font-size: 13.12px; color: #313131; line-height: 1.55; }
+}.step-card h4 { font-size: 18px; font-weight: 600; margin: 0; }.step-card.blue h4 { color: #3871e0; }.step-card.teal h4 { color: #27bbad; }.step-card.orange h4 { color: #ff854e; }.step-card.purple h4 { color: #c454b6; }.step-what-you { font-size: 14px; font-weight: 600; color: #4a5568; margin-bottom: 0; }.step-action { font-size: 14px; color: #313131; line-height: 1.55; }
 .step-esign-bg {
   border-radius: 10px;
-  font-size: 12.8px;
+  font-size: 12px;
   line-height: 1.55;
   color: #3b3b3c;
   margin: 0 14px 14px;
@@ -1215,7 +1218,7 @@ body {
   padding: 12px 16px 14px 16px;
 }.step-card--right .step-esign-bg {
   padding: 12px 16px 14px 16px;
-}.step-esign-bg.blue-bg-soft { background: #eff6ff; }.step-esign-bg.teal-bg-soft { background: #e3fffc; }.step-esign-bg.orange-bg-soft { background: #fff0e9; }.step-esign-bg.purple-bg-soft { background: #ffeffd; }.step-esign-label { font-size: 12.8px; font-weight: 600; color: #3b3b3c; margin-bottom: 2px; }
+}.step-esign-bg.blue-bg-soft { background: #eff6ff; }.step-esign-bg.teal-bg-soft { background: #e3fffc; }.step-esign-bg.orange-bg-soft { background: #fff0e9; }.step-esign-bg.purple-bg-soft { background: #ffeffd; }.step-esign-label { font-size: 12px; font-weight: 600; color: #3b3b3c; margin-bottom: 2px; }
 .connector {
   position: absolute;
   z-index: 1;
@@ -1407,6 +1410,7 @@ body .how-step-col {
   border: 1px solid rgba(64, 170, 199, 0.35);
   border-radius: 16px;
   padding: 40px 36px 48px;
+  overflow: visible;
 }.org-flow-row {
   display: flex;
   align-items: stretch;
@@ -1424,7 +1428,7 @@ body .how-step-col {
   height: 92px;
   position: relative;
   z-index: 3;
-  margin-left: 80px; 
+  margin: 0 auto; 
 }.org-flow-icon img {
   width: 100%;
   height: 100%;
@@ -1435,23 +1439,25 @@ body .how-step-col {
   position: absolute;
   left: 4.0px;                     
   top: 46px;                       
-  width: 76.0px;                   
+  width: calc(50% - 50px);                   
   height: 48px;                    
   border-top: 1.5px solid var(--oc);
   border-left: 1.5px solid var(--oc);
   border-top-left-radius: 12px;
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
   box-sizing: border-box;
 }.org-flow-right-line {
   position: absolute;
-  left: 172px;                     
+  left: calc(50% + 46px);                     
   top: 46px;                       
-  width: calc(100% - 172px);       
+  width: calc(50% - 46px);       
   height: 1.5px;
   background: var(--oc);
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
+}.org-flow-col--last .org-flow-right-line {
+  display: none;
 }.org-flow-right-line::after {
   content: '';
   position: absolute;
@@ -1497,11 +1503,11 @@ body .how-step-col {
   background: var(--ot);
   margin: 0;
   display: flex;
-  align-items: flex-start;
-  padding: 20px 24px 10px;
+  align-items: center;
+  padding: 14px 24px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 18.88px;
+  font-size: 18px;
   line-height: 1.3;
   color: var(--oc);
   border-radius: 0 14px 0 0;
@@ -1527,9 +1533,6 @@ body .how-step-col {
   .org-flow-col {
     flex: 0 0 calc(50% - 14px);
     max-width: calc(50% - 14px);
-  }
-  .org-flow-col:nth-child(2n) .org-flow-right-line {
-    display: none;
   }
 }
 
@@ -1563,8 +1566,5 @@ body .how-step-col {
   .org-flow-card {
     height: auto;
     min-height: 416px;
-  }
-  .org-flow-right-line {
-    display: none;
   }
 }
