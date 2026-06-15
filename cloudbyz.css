@@ -962,11 +962,16 @@ section > .cb-container {
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
-}.timeline-circle img {
-  position: absolute;
-  width: 114px;
-  height: 121px;
+.timeline-circle img {
+  width: 100%;
+  height: 100%;
   display: block;
+}
+.circle-inner {
+  position: absolute;
+  width: 131px;
+  height: 131px;
+  z-index: 2;
 }
 .circle-1::before,
 .circle-3::before,
@@ -974,12 +979,13 @@ section > .cb-container {
 .circle-7::before {
   left: -4px;
   top: -4px;
-}.circle-1 img,
-.circle-3 img,
-.circle-5 img,
-.circle-7 img {
-  left: 8.5px;
-  top: 8.5px;
+}
+.circle-1 .circle-inner,
+.circle-3 .circle-inner,
+.circle-5 .circle-inner,
+.circle-7 .circle-inner {
+  left: 0;
+  top: 0;
 }
 .circle-2::before,
 .circle-4::before,
@@ -987,12 +993,49 @@ section > .cb-container {
 .circle-8::before {
   left: -4px;
   top: 4px;
-}.circle-2 img,
+}
+.circle-2 .circle-inner,
+.circle-4 .circle-inner,
+.circle-6 .circle-inner,
+.circle-8 .circle-inner {
+  left: 0;
+  top: 8px;
+}
+.circle-2 img,
 .circle-4 img,
 .circle-6 img,
 .circle-8 img {
-  left: 8.5px;
-  top: 9.5px;
+  clip-path: circle(43.5% at 50% 50%);
+}
+
+/* Triangles pointing up for even circles */
+.circle-2 .circle-inner::after,
+.circle-4 .circle-inner::after,
+.circle-6 .circle-inner::after,
+.circle-8 .circle-inner::after {
+  content: '';
+  position: absolute;
+  top: -2.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  z-index: 3;
+}
+.circle-2 .circle-inner::after {
+  border-bottom: 11px solid #b8d98d;
+}
+.circle-4 .circle-inner::after {
+  border-bottom: 11px solid #81cce7;
+}
+.circle-6 .circle-inner::after {
+  border-bottom: 11px solid #81b2e7;
+}
+.circle-8 .circle-inner::after {
+  border-bottom: 11px solid #8f82be;
+}
 }.timeline-text {
   display: flex;
   flex-direction: column;
@@ -1037,12 +1080,21 @@ section > .cb-container {
     border: 1.5px dotted #c3cfdf;
     border-radius: 50%;
     pointer-events: none;
-  }.timeline-circle img {
+  .circle-inner {
     position: absolute;
     width: 57px;
-    height: 61px;
+    height: 57px;
     left: 6.5px;
-    top: 6.5px;
+    top: 8.5px;
+  }
+  .timeline-circle img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    clip-path: circle(43% at 50% 50%);
+  }
+  .circle-inner::after {
+    display: none !important;
   }.circle-1::before,
   .circle-3::before,
   .circle-5::before,
