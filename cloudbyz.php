@@ -12,7 +12,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./cloudbyz.css?v=68" />
+  <link rel="stylesheet" href="./cloudbyz.css?v=69" />
 </head>
 <body>
 
@@ -118,7 +118,7 @@
     </div>
     <div class="row justify-content-center">
       <!-- Document Configured -->
-      <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-blue">
             <div class="pc-icon-wrap pc-icon-bg-blue">
@@ -131,7 +131,7 @@
         </div>
       </div>
       <!-- Invitations Sent -->
-      <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-cyan">
             <div class="pc-icon-wrap pc-icon-bg-cyan">
@@ -144,7 +144,7 @@
         </div>
       </div>
       <!-- Signatures In Progress -->
-      <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-orange">
             <div class="pc-icon-wrap pc-icon-bg-orange">
@@ -157,7 +157,7 @@
         </div>
       </div>
       <!-- Audit Trail -->
-      <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-amber">
             <div class="pc-icon-wrap pc-icon-bg-amber">
@@ -288,7 +288,7 @@
       <div class="config-box">
         <div class="config-label">Signee Authentication Options:</div>
         <div class="row auth-options-wrapper py-4">
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
               <div class="auth-circle">
                 <img src="./public/Vector13.svg" alt="Email Link" />
@@ -299,7 +299,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
               <div class="auth-circle">
                 <img src="./public/Disconnected-e-signature4@2x.png" alt="Google Sign-In" />
@@ -310,7 +310,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
               <div class="auth-circle">
                 <img src="./public/Disconnected-e-signature.svg" alt="Platform Credentials" />
@@ -328,7 +328,7 @@
       <div class="config-box">
         <div class="config-label">Field Types Available:</div>
         <div class="row field-types-wrapper">
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
                 <img src="./public/Group-84115@2x.png" alt="Signature" class="field-type-icon" />
@@ -337,7 +337,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
                 <img src="./public/Group-82744.svg" alt="Initials" class="field-type-icon" />
@@ -346,7 +346,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
                 <img src="./public/Group-82745.svg" alt="Text" class="field-type-icon" />
@@ -355,7 +355,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
                 <img src="./public/Group-82746.svg" alt="Pre-filled Text" class="field-type-icon" />
@@ -505,21 +505,21 @@
       <div class="config-box template-box">
         <div class="config-label template-label">Events Captured:</div>
         <div class="row pt-3">
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-12 col-xl-4 mb-4">
             <div class="template-card h-100">
               <img src="./public/Collaborative-Approach.svg" alt="Build Once" class="template-icon" />
               <h4>Build it once. Use it every time</h4>
               <p>Create templates with fields pre-placed and signing roles pre-assigned. When you need to send, fill in the actual recipient names and emails — the structure is already there.</p>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-12 col-xl-4 mb-4">
             <div class="template-card h-100">
               <img src="./public/Technical-Support@2x.png" alt="Template Capabilities" class="template-icon" />
               <h4>Template Capabilities</h4>
               <p>Place all field types on the PDF and assign each to a named role (e.g., “Client,” “Legal,” “Approver”) - Set sequential or parallel signing order at the template level - Add comments or instructions that appear to signers at signing time - Use for one-off documents or repeat workflows</p>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-12 col-xl-4 mb-4">
             <div class="template-card h-100">
               <img src="./public/Training-and-Education@2x.png" alt="Document Management" class="template-icon" />
               <h4>Document Management</h4>
