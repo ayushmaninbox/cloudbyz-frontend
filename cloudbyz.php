@@ -245,8 +245,8 @@
       </div>
 
       <!-- Signee Authentication -->
-      <div class="config-box">
-        <div class="config-label">Signee Authentication Options:</div>
+      <div class="config-box auth-box">
+        <div class="config-label auth-label">Signee Authentication Options:</div>
         <div class="row auth-options-wrapper py-4">
           <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
