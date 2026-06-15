@@ -20,7 +20,7 @@
 
 <!-- ==================== NAVBAR ==================== -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <a class="navbar-brand" href="#">
       <img src="./public/CloudbyzLogo-September2020-01-01.svg" alt="Cloudbyz" />
     </a>
@@ -64,7 +64,7 @@
 
 <!-- ==================== HERO ==================== -->
 <section class="hero-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="row align-items-center">
       <div class="col-xl-6 col-12 mb-5 mb-xl-0 pr-xl-4 py-lg-5">
         <h1 class="hero-title mb-3">Every Signature Accounted For.<br />Every Workflow Under Control.</h1>
@@ -113,7 +113,7 @@
 
 <!-- ==================== PROCESS SECTION ==================== -->
 <section class="process-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="text-center mb-5">
       <h2 class="section-title">How a Document Moves Through Cloudbyz eSign</h2>
       <p class="section-subtitle">From Upload to Signed — Fully Tracked</p>
@@ -177,7 +177,7 @@
 
 <!-- ==================== WHY SWITCH ==================== -->
 <section class="why-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="text-center mb-5">
       <h2 class="section-title">Why Teams Switch to Cloudbyz eSign</h2>
       <p class="section-subtitle">Your current tool collects signatures. It doesn't run the workflow around them.</p>
@@ -233,7 +233,7 @@
 
 <!-- ==================== PLATFORM CAPABILITIES ==================== -->
 <section class="platform-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="text-center mb-5">
       <h2 class="section-title">Platform Capabilities</h2>
       <p class="section-subtitle">Built for the whole agreement — not just the signature.</p>
@@ -390,7 +390,7 @@
 
 <!-- ==================== AUDIT TRAIL ==================== -->
 <section class="audit-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="audit-wrapper">
       <div class="d-flex flex-column" style="gap: 12px;">
         <div class="capability-label" style="background:#27bbad;">
@@ -513,7 +513,7 @@
 
 <!-- ==================== DOCUMENT & TEMPLATE MANAGEMENT ==================== -->
 <section class="template-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="template-wrapper">
       <div class="capability-label" style="background:#da6261; margin-left: -48px;">
         <img src="./public/Exclude.svg" alt="Templates" style="height:48px;" />
@@ -552,7 +552,7 @@
 
 <!-- ==================== ORGANIZATION & ACCESS ==================== -->
 <section class="org-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="org-wrapper">
       <div class="capability-label" style="background:#40aac7; margin-left: -48px;">
         <img src="./public/Connection-Control.svg" alt="Org" style="height:48px;" />
@@ -617,7 +617,7 @@
 
 <!-- ==================== HOW IT WORKS ==================== -->
 <section class="how-section">
-  <div class="cb-container">
+  <div class="max-width-1920">
     <div class="text-center mb-5">
       <h2 class="section-title">How It Works</h2>
       <p class="section-subtitle">From upload to signed — four clear steps.</p>

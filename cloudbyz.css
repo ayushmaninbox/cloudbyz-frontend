@@ -18,13 +18,13 @@ body {
   height: 44.63px ;
   width: auto;
   display: block;
-}body .navbar {
+}.cloudbyzsign .navbar {
   border-bottom: 1px solid #dcd8d8;
   background: #fff;
   width: 100%;
   padding: 0;
 }
-body .navbar > .cb-container {
+.cloudbyzsign .navbar > .max-width-1920 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -87,88 +87,101 @@ body .nav-contact {
 
 /* --- Medium Desktop Spacing Overrides (992px to 1199px) --- */
 @media (min-width: 992px) and (max-width: 1199px) {
-body .cb-container {
-    padding-left: 24px ;
-    padding-right: 24px ;
-  }body .navbar-brand {
-    margin-right: 4px ;
-    padding: 16px 0px ;
-    height: 70px ;
-  }body .navbar-brand img {
-    height: 30px ;
-  }body .navbar-nav {
-    gap: 4px ;
-  }body .nav-item-custom {
-    font-size: 13px ;
-    padding: 8px 2px ;
-  }body .nav-contact {
-    font-size: 13px ;
-    padding: 8px 2px ;
-  }body .nav-divider {
-    margin: 0 3px ;
-  }body .btn-signin {
-    padding: 6px 12px ;
-    font-size: 13px ;
-  }body .compliance-badges-row {
-    gap: 8px 16px ;
-  }body .compliance-badge span {
-    font-size: 11px ;
-  }body .compliance-badge {
-    gap: 6px ;
+  .cloudbyzsign .max-width-1920 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
-
-}/* --- Page container --- */
-.cb-container {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  body .navbar-brand {
+    margin-right: 4px;
+    padding: 16px 0px;
+    height: 70px;
+  }
+  body .navbar-brand img {
+    height: 30px;
+  }
+  body .navbar-nav {
+    gap: 4px;
+  }
+  body .nav-item-custom {
+    font-size: 13px;
+    padding: 8px 2px;
+  }
+  body .nav-contact {
+    font-size: 13px;
+    padding: 8px 2px;
+  }
+  body .nav-divider {
+    margin: 0 3px;
+  }
+  body .btn-signin {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  body .compliance-badges-row {
+    gap: 8px 16px;
+  }
+  body .compliance-badge span {
+    font-size: 11px;
+  }
+  body .compliance-badge {
+    gap: 6px;
+  }
 }
+
 /* --- Page wrapper --- */
 .cloudbyzsign {
   width: 100%;
 }
-/* --- Section spacing --- */
-section {
+/* --- Page container & Section spacing --- */
+.cloudbyzsign section {
   padding: 0;
 }
-section > .cb-container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+.cloudbyzsign .max-width-1920 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
   padding-left: 24px;
   padding-right: 24px;
 }
+.cloudbyzsign section > .max-width-1920 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 @media (min-width: 992px) {
-  section > .cb-container {
+  .cloudbyzsign .max-width-1920 {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 @media (max-width: 575px) {
-  section > .cb-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .cloudbyzsign .max-width-1920 {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .cloudbyzsign section > .max-width-1920 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
-.hero-section > .cb-container {
+.cloudbyzsign .hero-section > .max-width-1920 {
   padding-top: 80px;
   padding-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .hero-section > .cb-container {
+  .cloudbyzsign .hero-section > .max-width-1920 {
     padding-top: 30px;
     padding-bottom: 0;
   }
-  .template-section > .cb-container,
-  .org-section > .cb-container,
-  .config-section > .cb-container {
+  .cloudbyzsign .template-section > .max-width-1920,
+  .cloudbyzsign .org-section > .max-width-1920,
+  .cloudbyzsign .config-section > .max-width-1920 {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media (max-width: 575px) {
-  .hero-section > .cb-container {
+  .cloudbyzsign .hero-section > .max-width-1920 {
     padding-top: 60px;
     padding-bottom: 40px;
   }
@@ -207,8 +220,8 @@ section > .cb-container {
     height: 570px;
     box-sizing: border-box;
   }
-  .hero-section > .cb-container,
-  .hero-section > .cb-container > .row {
+  .cloudbyzsign .hero-section > .max-width-1920,
+  .cloudbyzsign .hero-section > .max-width-1920 > .row {
     height: 100%;
   }.hero-section .row > div:first-child {
     align-self: center;
