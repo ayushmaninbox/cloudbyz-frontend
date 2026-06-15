@@ -1127,8 +1127,10 @@ body {
     white-space: normal;
   }
 
+  /* Keep every item's title aligned with the connector line so the line
+     always sits between title and description, even when text wraps. */
   .auth-options-wrapper>div:nth-child(n+2) .auth-title {
-    margin-top: -16px;
+    margin-top: 0;
   }
 
   .auth-desc {
