@@ -18,48 +18,6 @@
 
 <div class="cloudbyzsign">
 
-<!-- ==================== NAVBAR ==================== -->
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-  <div class="max-width-1920">
-    <a class="navbar-brand" href="#">
-      <img src="./public/CloudbyzLogo-September2020-01-01.svg" alt="Cloudbyz" />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link nav-item-custom active" id="productsDropdown" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-item-custom" id="industriesDropdown" href="#">Industries</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-item-custom" id="platformdropdown" href="#">Platform</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-item-custom" id="servicesDropdown" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-item-custom" id="resourcesDropdown" href="#">Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-item-custom" id="companyDropdown" href="#">Company</a>
-        </li>
-        <li class="nav-item d-flex align-items-center flex-nowrap nav-contact-group">
-          <a href="#" class="nav-link nav-contact">Contact Us</a>
-          <span class="nav-divider"></span>
-          <a href="#" class="nav-link nav-contact">Support</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="btn btn-signin">Request Demo <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-left: 6px;"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 
 
 <!-- ==================== HERO ==================== -->
@@ -184,7 +142,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 mb-4">
-        <div class="issue-card blue h-100">
+        <div class="card issue-card blue h-100">
           <div class="issue-side-bar"></div>
           <div class="issue-card-header">
             <img src="./public/Disconnected-e-signature1@2x.png" alt="No Control Over Signing Order" class="issue-icon" />
@@ -195,7 +153,7 @@
         </div>
       </div>
       <div class="col-lg-6 mb-4">
-        <div class="issue-card yellow h-100">
+        <div class="card issue-card yellow h-100">
           <div class="issue-side-bar"></div>
           <div class="issue-card-header">
             <img src="./public/Disconnected-e-signature3@2x.png" alt="Audit Trails That Stop at the Signature" class="issue-icon" />
@@ -206,7 +164,7 @@
         </div>
       </div>
       <div class="col-lg-6 mb-4">
-        <div class="issue-card red h-100">
+        <div class="card issue-card red h-100">
           <div class="issue-side-bar"></div>
           <div class="issue-card-header">
             <img src="./public/Disconnected-e-signature2@2x.png" alt="Signers Who Need a Login" class="issue-icon" />
@@ -217,7 +175,7 @@
         </div>
       </div>
       <div class="col-lg-6 mb-4">
-        <div class="issue-card orange h-100">
+        <div class="card issue-card orange h-100">
           <div class="issue-side-bar"></div>
           <div class="issue-card-header">
             <img src="./public/Disconnected-e-signature5@2x.png" alt="Starting Over for Every Agreement" class="issue-icon" />
@@ -738,28 +696,9 @@
 
 </div> <!-- /.cloudbyzsign -->
 
-<!-- Scroll to top -->
-<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-  <i class="fas fa-chevron-up"></i>
-</button>
-
 <!-- Bootstrap 4.5.1 JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
-<script>
-  // Scroll to top button
-  var scrollBtn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 400) {
-      scrollBtn.classList.add('visible');
-    } else {
-      scrollBtn.classList.remove('visible');
-    }
-  });
-  scrollBtn.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
 </body>
 </html>
