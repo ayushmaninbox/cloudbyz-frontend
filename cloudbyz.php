@@ -81,11 +81,12 @@
       <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-blue">
+            <span class="process-card-arc"></span>
             <div class="pc-icon-wrap pc-icon-bg-blue">
               <img src="./public/a.png" alt="Document Configured" class="pc-icon-img" />
             </div>
             <h3>Document Configured</h3>
-            <div><span class="badge-status badge-done">Done</span></div>
+            <div class="pc-badge-wrap"><span class="badge-status badge-done">Done</span></div>
             <small>Fields Placed · 3 Signers Assigned · Sequential Order Set</small>
           </div>
         </div>
@@ -94,11 +95,12 @@
       <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-cyan">
+            <span class="process-card-arc"></span>
             <div class="pc-icon-wrap pc-icon-bg-cyan">
               <img src="./public/b.png" alt="Invitations Sent" class="pc-icon-img" />
             </div>
             <h3>Invitations Sent</h3>
-            <div><span class="badge-status badge-done">Done</span></div>
+            <div class="pc-badge-wrap"><span class="badge-status badge-done">Done</span></div>
             <small>Personalized Signing Links Delivered · No Signer Account Required</small>
           </div>
         </div>
@@ -107,11 +109,12 @@
       <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-orange">
+            <span class="process-card-arc"></span>
             <div class="pc-icon-wrap pc-icon-bg-orange">
               <img src="./public/c.png" alt="Signatures In Progress" class="pc-icon-img" />
             </div>
             <h3>Signatures In Progress</h3>
-            <div><span class="badge-status badge-active">Active</span></div>
+            <div class="pc-badge-wrap"><span class="badge-status badge-active">Active</span></div>
             <small>Signer 1 · Signer 2 · Signer 3 · Notified And Pending</small>
           </div>
         </div>
@@ -120,11 +123,12 @@
       <div class="col-sm-6 col-lg-6 col-xl-3 mb-4">
         <div class="pc-card-outer">
           <div class="card process-card pc-amber">
+            <span class="process-card-arc"></span>
             <div class="pc-icon-wrap pc-icon-bg-amber">
               <img src="./public/d.png" alt="Audit Trail" class="pc-icon-img" />
             </div>
             <h3>Audit Trail</h3>
-            <div><span class="badge-status badge-live">Live</span></div>
+            <div class="pc-badge-wrap"><span class="badge-status badge-live">Live</span></div>
             <small>Every Open, Field Completion, And Signature Logged With Timestamp And IP</small>
           </div>
         </div>
@@ -213,10 +217,14 @@
         <div class="config-label">Signing Configuration:</div>
         <div class="flow-diagram-container">
           <div class="flow-connector-line line-1">
+            <div class="flow-connector-arrow-left"></div>
             <div class="flow-connector-line-dashed"></div>
+            <div class="flow-connector-arrow-right"></div>
           </div>
           <div class="flow-connector-line line-2">
+            <div class="flow-connector-arrow-left"></div>
             <div class="flow-connector-line-dashed"></div>
+            <div class="flow-connector-arrow-right"></div>
           </div>
           <div class="flow-diagram-row">
             <div class="flow-diagram-col">
@@ -250,7 +258,11 @@
         <div class="row auth-options-wrapper py-4">
           <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
+              <div class="auth-line-connector"></div>
+              <div class="auth-arrow-connector"></div>
               <div class="auth-circle">
+                <div class="auth-circle-outer-ring"></div>
+                <div class="auth-circle-dot"></div>
                 <img src="./public/Vector13.svg" alt="Email Link" />
               </div>
               <div class="auth-text-container">
@@ -261,7 +273,11 @@
           </div>
           <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
+              <div class="auth-line-connector"></div>
+              <div class="auth-arrow-connector"></div>
               <div class="auth-circle">
+                <div class="auth-circle-outer-ring"></div>
+                <div class="auth-circle-dot"></div>
                 <img src="./public/Disconnected-e-signature4@2x.png" alt="Google Sign-In" />
               </div>
               <div class="auth-text-container">
@@ -272,7 +288,11 @@
           </div>
           <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
+              <div class="auth-line-connector"></div>
+              <div class="auth-arrow-connector"></div>
               <div class="auth-circle">
+                <div class="auth-circle-outer-ring"></div>
+                <div class="auth-circle-dot"></div>
                 <img src="./public/Disconnected-e-signature.svg" alt="Platform Credentials" />
               </div>
               <div class="auth-text-container">
@@ -291,6 +311,8 @@
           <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
+                <div class="field-type-card-hexagon-bg"></div>
+                <div class="field-type-card-bottom-pill"></div>
                 <img src="./public/Group-84115@2x.png" alt="Signature" class="field-type-icon" />
                 <h4>Signature</h4>
                 <p>Draw, Type In A Styled Font, Or Upload An Image</p>
@@ -300,6 +322,8 @@
           <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
+                <div class="field-type-card-hexagon-bg"></div>
+                <div class="field-type-card-bottom-pill"></div>
                 <img src="./public/Group-82744.svg" alt="Initials" class="field-type-icon" />
                 <h4>Initials</h4>
                 <p>Separate Initials Field, Independently Placed</p>
@@ -309,6 +333,8 @@
           <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
+                <div class="field-type-card-hexagon-bg"></div>
+                <div class="field-type-card-bottom-pill"></div>
                 <img src="./public/Group-82745.svg" alt="Text" class="field-type-icon" />
                 <h4>Text</h4>
                 <p>Free-Form Input The Signer Fills In At Signing Time</p>
@@ -318,6 +344,8 @@
           <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-4">
             <div class="field-card-outer">
               <div class="card field-type-card">
+                <div class="field-type-card-hexagon-bg"></div>
+                <div class="field-type-card-bottom-pill"></div>
                 <img src="./public/Group-82746.svg" alt="Pre-filled Text" class="field-type-icon" />
                 <h4>Pre-Filled Text</h4>
                 <p>Locked Text Stamped By The Sender - Read-Only For Signers</p>
@@ -331,12 +359,14 @@
       <div class="row">
         <div class="col-md-6 mb-4">
           <div class="consent-box h-100">
+            <div class="consent-box-sidebar"></div>
             <h4>Reason for Signing:</h4>
             <p>Every signature requires the signer to select or enter a reason — a requirement under 21 CFR Part 11 and a meaningful compliance record for regulated industries.</p>
           </div>
         </div>
         <div class="col-md-6 mb-4">
           <div class="consent-box h-100">
+            <div class="consent-box-sidebar"></div>
             <h4>Explicit Consent:</h4>
             <p>Signers must read and accept the Terms and Conditions before completing any fields. Consent is recorded as part of the audit trail.</p>
           </div>
@@ -372,7 +402,9 @@
 
             <!-- Node 1 -->
             <div class="timeline-circle circle-1">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84156.png" alt="Document created icon" />
               </div>
             </div>
@@ -387,14 +419,18 @@
               <span class="al-sub">Recipient details, timestamp</span>
             </div>
             <div class="timeline-circle circle-2">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84157.png" alt="Invitation sent icon" />
               </div>
             </div>
 
             <!-- Node 3 -->
             <div class="timeline-circle circle-3">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84158.png" alt="Document opened icon" />
               </div>
             </div>
@@ -409,14 +445,18 @@
               <span class="al-sub">Which field, by whom, timestamp</span>
             </div>
             <div class="timeline-circle circle-4">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84159.png" alt="Field completed icon" />
               </div>
             </div>
 
             <!-- Node 5 -->
             <div class="timeline-circle circle-5">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84160.png" alt="Signature applied icon" />
               </div>
             </div>
@@ -431,14 +471,18 @@
               <span class="al-sub">Final status, all parties confirmed</span>
             </div>
             <div class="timeline-circle circle-6">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84161.png" alt="Document completed icon" />
               </div>
             </div>
 
             <!-- Node 7 -->
             <div class="timeline-circle circle-7">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84162.png" alt="Document declined icon" />
               </div>
             </div>
@@ -453,7 +497,9 @@
               <span class="al-sub">Actioned by whom, timestamp</span>
             </div>
             <div class="timeline-circle circle-8">
+              <div class="timeline-circle-border"></div>
               <div class="circle-inner">
+                <div class="circle-inner-arrow"></div>
                 <img src="./public/Group 84163.png" alt="Document cancelled icon" />
               </div>
             </div>
@@ -462,6 +508,7 @@
       </div>
 
       <div class="audit-access-box">
+        <div class="audit-access-box-sidebar"></div>
         <h4>Audit Access:</h4>
         <p>View the full event timeline alongside the signed document in any document preview - Filter by user, event type, or date range in the Audit History dashboard - Export the complete audit log as a CSV for offline review or submission</p>
       </div>
@@ -525,8 +572,9 @@
             <img src="./public/Group-84130@2x.png" alt="Admin Controls" />
             </div>
             <span class="org-flow-left-line"></span>
-            <span class="org-flow-right-line"></span>
+            <span class="org-flow-right-line"><span class="org-flow-right-line-arrow"></span></span>
             <div class="card org-flow-card">
+              <div class="org-flow-card-tab"></div>
               <h4 class="org-flow-title">Admin Controls For The Teams Who Need Them.</h4>
               <p class="org-flow-desc">Cloudbyz eSign Supports Both Individual Users And Multi-Member Organizations With Shared Document Visibility And Centralized Admin Controls.</p>
             </div>
@@ -537,8 +585,9 @@
               <img src="./public/Group-84131@2x.png" alt="User Management" />
             </div>
             <span class="org-flow-left-line"></span>
-            <span class="org-flow-right-line"></span>
+            <span class="org-flow-right-line"><span class="org-flow-right-line-arrow"></span></span>
             <div class="card org-flow-card">
+              <div class="org-flow-card-tab"></div>
               <h4 class="org-flow-title">User Management (Admin)</h4>
               <p class="org-flow-desc">Activate Or Deactivate Team Members - Assign Or Remove Admin Roles - Reassign All Documents Owned By A Departing User To Another Member — No Documents Are Orphaned</p>
             </div>
@@ -549,8 +598,9 @@
               <img src="./public/Group-84132@2x.png" alt="Credit System" />
             </div>
             <span class="org-flow-left-line"></span>
-            <span class="org-flow-right-line"></span>
+            <span class="org-flow-right-line"><span class="org-flow-right-line-arrow"></span></span>
             <div class="card org-flow-card">
+              <div class="org-flow-card-tab"></div>
               <h4 class="org-flow-title">Credit System</h4>
               <p class="org-flow-desc">Credits Are Consumed When A Document Is Sent For Signature - Organizations Share A Credit Pool Across All Members - Individual (Personal) Accounts Have Their Own Credit Balance - Admins Can View Current Balance, Usage History, And Refill Credits</p>
             </div>
@@ -561,8 +611,9 @@
               <img src="./public/Group-84133@2x.png" alt="Analytics" />
             </div>
             <span class="org-flow-left-line"></span>
-            <span class="org-flow-right-line"></span>
+            <span class="org-flow-right-line"><span class="org-flow-right-line-arrow"></span></span>
             <div class="card org-flow-card">
+              <div class="org-flow-card-tab"></div>
               <h4 class="org-flow-title">Analytics</h4>
               <p class="org-flow-desc">Event Volume Trends Over Time (24h, 7d, 30d, 90d) - Activity Breakdown By Event Type - Peak Usage By Hour And Day Of Week - Top Active Users Within The Organization</p>
             </div>
@@ -625,10 +676,12 @@
         <div class="how-works-center">
           <!-- Left Connectors -->
           <div class="connector connector-left connector-top-left">
+            <div class="connector-sub-line"></div>
             <span class="connector-dot"></span>
             <span class="connector-arrow"></span>
           </div>
           <div class="connector connector-left connector-bottom-left">
+            <div class="connector-sub-line"></div>
             <span class="connector-dot"></span>
             <span class="connector-arrow"></span>
           </div>
@@ -640,10 +693,12 @@
  
           <!-- Right Connectors -->
           <div class="connector connector-right connector-top-right">
+            <div class="connector-sub-line"></div>
             <span class="connector-dot"></span>
             <span class="connector-arrow"></span>
           </div>
           <div class="connector connector-right connector-bottom-right">
+            <div class="connector-sub-line"></div>
             <span class="connector-dot"></span>
             <span class="connector-arrow"></span>
           </div>
