@@ -392,7 +392,7 @@
       <div class="config-box mint-box">
         <div class="config-label mint-label">Events Captured:</div>
         <div class="py-3">
-          <div class="audit-timeline-grid">
+          <div class="row no-gutters audit-timeline-row">
             <!-- Inline SVG connection lines for desktop -->
              <svg class="audit-timeline-svg" viewBox="0 0 1000 278" preserveAspectRatio="none" aria-hidden="true">
                <!-- Connection Lines -->
@@ -401,106 +401,122 @@
              </svg>
 
             <!-- Node 1 -->
-            <div class="timeline-circle circle-1">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84156.png" alt="Document created icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col odd col-1">
+              <div class="timeline-circle circle-1">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84156.png" alt="Document created icon" />
+                </div>
               </div>
-            </div>
-            <div class="timeline-text text-1">
-              <span class="al-title c-created">Document created</span>
-              <span class="al-sub">Sender identity, timestamp, IP</span>
+              <div class="timeline-text text-1">
+                <span class="al-title c-created">Document created</span>
+                <span class="al-sub">Sender identity, timestamp, IP</span>
+              </div>
             </div>
 
             <!-- Node 2 -->
-            <div class="timeline-text text-2">
-              <span class="al-title c-invitation">Invitation sent</span>
-              <span class="al-sub">Recipient details, timestamp</span>
-            </div>
-            <div class="timeline-circle circle-2">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84157.png" alt="Invitation sent icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col even col-2">
+              <div class="timeline-circle circle-2">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84157.png" alt="Invitation sent icon" />
+                </div>
+              </div>
+              <div class="timeline-text text-2">
+                <span class="al-title c-invitation">Invitation sent</span>
+                <span class="al-sub">Recipient details, timestamp</span>
               </div>
             </div>
 
             <!-- Node 3 -->
-            <div class="timeline-circle circle-3">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84158.png" alt="Document opened icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col odd col-3">
+              <div class="timeline-circle circle-3">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84158.png" alt="Document opened icon" />
+                </div>
               </div>
-            </div>
-            <div class="timeline-text text-3">
-              <span class="al-title c-opened">Document opened</span>
-              <span class="al-sub">Signer identity, device, timestamp, IP</span>
+              <div class="timeline-text text-3">
+                <span class="al-title c-opened">Document opened</span>
+                <span class="al-sub">Signer identity, device, timestamp, IP</span>
+              </div>
             </div>
 
             <!-- Node 4 -->
-            <div class="timeline-text text-4">
-              <span class="al-title c-field">Field completed</span>
-              <span class="al-sub">Which field, by whom, timestamp</span>
-            </div>
-            <div class="timeline-circle circle-4">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84159.png" alt="Field completed icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col even col-4">
+              <div class="timeline-circle circle-4">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84159.png" alt="Field completed icon" />
+                </div>
+              </div>
+              <div class="timeline-text text-4">
+                <span class="al-title c-field">Field completed</span>
+                <span class="al-sub">Which field, by whom, timestamp</span>
               </div>
             </div>
 
             <!-- Node 5 -->
-            <div class="timeline-circle circle-5">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84160.png" alt="Signature applied icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col odd col-5">
+              <div class="timeline-circle circle-5">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84160.png" alt="Signature applied icon" />
+                </div>
               </div>
-            </div>
-            <div class="timeline-text text-5">
-              <span class="al-title c-signature">Signature applied</span>
-              <span class="al-sub">Signer, reason selected, timestamp, IP</span>
+              <div class="timeline-text text-5">
+                <span class="al-title c-signature">Signature applied</span>
+                <span class="al-sub">Signer, reason selected, timestamp, IP</span>
+              </div>
             </div>
 
             <!-- Node 6 -->
-            <div class="timeline-text text-6">
-              <span class="al-title c-completed">Document completed</span>
-              <span class="al-sub">Final status, all parties confirmed</span>
-            </div>
-            <div class="timeline-circle circle-6">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84161.png" alt="Document completed icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col even col-6">
+              <div class="timeline-circle circle-6">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84161.png" alt="Document completed icon" />
+                </div>
+              </div>
+              <div class="timeline-text text-6">
+                <span class="al-title c-completed">Document completed</span>
+                <span class="al-sub">Final status, all parties confirmed</span>
               </div>
             </div>
 
             <!-- Node 7 -->
-            <div class="timeline-circle circle-7">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84162.png" alt="Document declined icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col odd col-7">
+              <div class="timeline-circle circle-7">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84162.png" alt="Document declined icon" />
+                </div>
               </div>
-            </div>
-            <div class="timeline-text text-7">
-              <span class="al-title c-declined">Document declined</span>
-              <span class="al-sub">Reason, signer identity, timestamp</span>
+              <div class="timeline-text text-7">
+                <span class="al-title c-declined">Document declined</span>
+                <span class="al-sub">Reason, signer identity, timestamp</span>
+              </div>
             </div>
 
             <!-- Node 8 -->
-            <div class="timeline-text text-8">
-              <span class="al-title c-cancelled">Document cancelled</span>
-              <span class="al-sub">Actioned by whom, timestamp</span>
-            </div>
-            <div class="timeline-circle circle-8">
-              <div class="timeline-circle-border"></div>
-              <div class="circle-inner">
-                <div class="circle-inner-arrow"></div>
-                <img src="./public/Group 84163.png" alt="Document cancelled icon" />
+            <div class="col-12 col-md-6 col-xl timeline-col even col-8">
+              <div class="timeline-circle circle-8">
+                <div class="timeline-circle-border"></div>
+                <div class="circle-inner">
+                  <div class="circle-inner-arrow"></div>
+                  <img src="./public/Group 84163.png" alt="Document cancelled icon" />
+                </div>
+              </div>
+              <div class="timeline-text text-8">
+                <span class="al-title c-cancelled">Document cancelled</span>
+                <span class="al-sub">Actioned by whom, timestamp</span>
               </div>
             </div>
           </div>
