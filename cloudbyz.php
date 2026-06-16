@@ -536,7 +536,7 @@
 <section class="template-section">
   <div class="max-width-1920">
     <div class="template-wrapper">
-      <div class="capability-label" style="background:#da6261; margin-left: -48px;">
+      <div class="capability-label" style="background:#da6261;">
         <img src="./public/Exclude.svg" alt="Templates" style="height:48px;" />
         Document &amp; Template Management
       </div>
@@ -575,7 +575,7 @@
 <section class="org-section">
   <div class="max-width-1920">
     <div class="org-wrapper">
-      <div class="capability-label" style="background:#40aac7; margin-left: -48px;">
+      <div class="capability-label" style="background:#40aac7;">
         <img src="./public/Connection-Control.svg" alt="Org" style="height:48px;" />
         Organization &amp; Access Management
       </div>
