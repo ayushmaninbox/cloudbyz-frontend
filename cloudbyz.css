@@ -81,14 +81,11 @@
   .cloudbyzsign .process-section>.max-width-1920,
   .cloudbyzsign .audit-section>.max-width-1920,
   .cloudbyzsign .template-section>.max-width-1920,
-  .cloudbyzsign .how-section>.max-width-1920 {
-    padding: 50px 65px 30px 65px;
-  }
-
+  .cloudbyzsign .how-section>.max-width-1920,
   .cloudbyzsign .why-section>.max-width-1920,
   .cloudbyzsign .platform-section>.max-width-1920,
   .cloudbyzsign .org-section>.max-width-1920 {
-    padding: 30px 80px 50px 80px;
+    padding: 50px 65px 30px 65px;
   }
 }
 
@@ -723,13 +720,13 @@
   font-size: 18px;
   font-weight: 600;
   max-width: 380px;
-  margin-left: -48px;
+  margin-left: -49px;
 }
 
 @media (max-width: 767px) {
   .cloudbyzsign .capability-label {
-    margin-left: 0;
-    border-radius: 10px;
+    margin-left: -17px;
+    border-radius: 0 10px 10px 0;
   }
 }
 
@@ -776,52 +773,32 @@
 
 /* On smaller screens the auth label wraps, so give the box extra
    top clearance for the taller tab (large screens keep the default). */
-@media (max-width: 991px) {
-  .cloudbyzsign .config-box.auth-box {
-    margin-top: 72px;
-  }
-}
+
 
 .cloudbyzsign .config-label {
   position: absolute;
-  top: -38px;
+  top: 0px;
+  transform: translateY(-100%);
   left: -1px;
   background: #dbebff;
   border-top: 1px solid #abbee6;
   border-left: 1px solid #abbee6;
   border-right: 1px solid #abbee6;
   border-radius: 12px 12px 0 0;
-  padding: 0 24px;
+  padding: 8px 24px;
   font-weight: 600;
   font-size: 16px;
   color: #4a6ca9;
-  height: 39px;
+  min-height: 43px;
+  height: auto;
   display: flex;
   align-items: center;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: calc(100% - 10px);
   z-index: 5;
 }
 
-/* Auth label: single line on large screens (like the other tabs),
-   wraps only when the screen narrows (see media query below). */
-.cloudbyzsign .config-label.auth-label {
-  top: auto;
-  bottom: 100%;
-  margin-bottom: -1px;
-  border-bottom: none;
-}
 
-/* On smaller screens let the label wrap to 2/3 lines naturally */
-@media (max-width: 991px) {
-  .cloudbyzsign .config-label.auth-label {
-    white-space: normal;
-    height: auto;
-    line-height: 1.25;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    max-width: 280px;
-  }
-}
 
 /* --- Custom Configuration Flows --- */
 .cloudbyzsign .flow-diagram-container {
@@ -950,19 +927,9 @@
 
 
 .cloudbyzsign .auth-circle img {
-  width: 52%;
-  height: 52%;
+  width: 50%;
+  height: 50%;
   object-fit: contain;
-}
-
-.cloudbyzsign .col-lg-4:nth-child(2) .auth-circle img {
-  width: 62%;
-  height: 62%;
-}
-
-.cloudbyzsign .col-lg-4:nth-child(3) .auth-circle img {
-  width: 78%;
-  height: 78%;
 }
 
 .cloudbyzsign .auth-circle img.google-auth-img {
@@ -1141,6 +1108,7 @@
 .cloudbyzsign .config-box.mint-box {
   border-color: #8acdc9;
   background: #fff;
+  padding: 10px 10px;
 }
 
 .cloudbyzsign .config-label.mint-label {
@@ -1361,6 +1329,14 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+
+  .cloudbyzsign .timeline-col.odd .timeline-text {
+    transform: translateY(-35px);
+  }
+
+  .cloudbyzsign .timeline-col.even .timeline-text {
+    transform: translateY(35px);
+  }
 }
 
 /* Medium Desktop (1200px to 1440px) */
@@ -1385,6 +1361,14 @@
 
   .cloudbyzsign .timeline-col .timeline-text {
     max-width: 110px;
+  }
+
+  .cloudbyzsign .timeline-col.odd .timeline-text {
+    transform: translateY(-50px);
+  }
+
+  .cloudbyzsign .timeline-col.even .timeline-text {
+    transform: translateY(50px);
   }
 
   .cloudbyzsign .al-title {
@@ -2203,8 +2187,8 @@
 
   .cloudbyzsign .template-wrapper .capability-label,
   .cloudbyzsign .org-wrapper .capability-label {
-    margin-left: 0;
-    border-radius: 10px;
+    margin-left: -17px;
+    border-radius: 0 10px 10px 0;
   }
 
   .cloudbyzsign .org-flow-col {
@@ -2409,10 +2393,10 @@
 
 .cloudbyzsign .org-flow-card-tab {
   position: absolute;
-  left: -2.25px;
+  left: -2px;
   top: -35.5px;
-  width: 53px;
-  height: 37px;
+  width: 50px;
+  height: 38px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -2423,15 +2407,15 @@
 }
 
 .cloudbyzsign .org-flow-col:nth-child(2) .org-flow-card-tab {
-  background-image: url('data:image/svg+xml;utf8,<svg width="53" height="37" viewBox="-1 0 53 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46 L49.42 37 L0.5 37 Z" fill="%23EDF8FC"/><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46" stroke="%2347BDDD" stroke-width="1.5"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg width="53" height="37" viewBox="-1 0 53 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46 L49.42 37 L0.5 37 Z" fill="%23EDF8FC"/><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46" stroke="%2347BDDD" stroke-width="1.5"/></svg>');
 }
 
 .cloudbyzsign .org-flow-col:nth-child(3) .org-flow-card-tab {
-  background-image: url('data:image/svg+xml;utf8,<svg width="53" height="37" viewBox="-1 0 53 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46 L49.42 37 L0.5 37 Z" fill="%23FFF3ED"/><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46" stroke="%23FF854E" stroke-width="1.5"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg width="53" height="37" viewBox="-1 0 53 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46 L49.42 37 L0.5 37 Z" fill="%23FFF3ED"/><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46" stroke="%23FF854E" stroke-width="1.5"/></svg>');
 }
 
 .cloudbyzsign .org-flow-col:nth-child(4) .org-flow-card-tab {
-  background-image: url('data:image/svg+xml;utf8,<svg width="53" height="37" viewBox="-1 0 53 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46 L49.42 37 L0.5 37 Z" fill="%23E9F8F7"/><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46" stroke="%2327BBAD" stroke-width="1.5"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg width="53" height="37" viewBox="-1 0 53 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46 L49.42 37 L0.5 37 Z" fill="%23E9F8F7"/><path d="M0.5 37 L0.5 7 C0.5 4.1 2.27 1.9 4.54 0.98 C6.76 0.09 9.44 0.37 11.47 2.29 L39.82 31.42 C41.08 32.71 42.58 33.72 44.21 34.42 C45.84 35.11 47.62 35.46 49.42 35.46" stroke="%2327BBAD" stroke-width="1.5"/></svg>');
 }
 
 @media (max-width: 575px) {

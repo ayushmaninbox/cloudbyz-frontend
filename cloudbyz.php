@@ -253,8 +253,8 @@
       </div>
 
       <!-- Signee Authentication -->
-      <div class="config-box auth-box">
-        <div class="config-label auth-label">Signee Authentication Options:</div>
+      <div class="config-box">
+        <div class="config-label">Signee Authentication Options:</div>
         <div class="row auth-options-wrapper py-4">
           <div class="col-lg-12 col-xl-4 mb-4">
             <div class="auth-option-item">
@@ -278,7 +278,7 @@
               <div class="auth-circle">
                 <div class="auth-circle-outer-ring"></div>
                 <div class="auth-circle-dot"></div>
-                <img src="./public/Disconnected-e-signature4@2x.png" alt="Google Sign-In" />
+                <img src="./public/Exclude.png" alt="Google Sign-In" />
               </div>
               <div class="auth-text-container">
                 <div class="auth-title">Google Sign-In</div>
@@ -293,7 +293,7 @@
               <div class="auth-circle">
                 <div class="auth-circle-outer-ring"></div>
                 <div class="auth-circle-dot"></div>
-                <img src="./public/Disconnected-e-signature.svg" alt="Platform Credentials" />
+                <img src="./public/Vector.png" alt="Platform Credentials" />
               </div>
               <div class="auth-text-container">
                 <div class="auth-title">Platform Credentials</div>
@@ -653,7 +653,7 @@
         <div class="step-card-wrapper blue step-card--left">
           <div class="step-card-offset"></div>
           <div class="step-icon blue-bg">
-            <img src="./public/Group-84105.svg" alt="Upload" />
+            <img src="./public/Group.svg" alt="Upload" />
           </div>
           <div class="card step-card blue">
             <div class="step-card-body">
@@ -726,7 +726,7 @@
         <div class="step-card-wrapper orange step-card--right">
           <div class="step-card-offset"></div>
           <div class="step-icon orange-bg">
-            <img src="./public/Group.svg" alt="Send" />
+            <img src="./public/Group-84105.svg" alt="Send" />
           </div>
           <div class="card step-card orange">
             <div class="step-card-body">
